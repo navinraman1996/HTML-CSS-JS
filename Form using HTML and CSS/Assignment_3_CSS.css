@@ -1,0 +1,1066 @@
+/*  Basic attribute and elements used:
+    1.top, bottom, left, right: These propertis in CSS goes hand in hand with positioning.
+    2.width and height:  specifies the width and height of the element's content area.
+    3.absolute: the element is positioned absolutely to its first positioned parent.
+    4.background-color: is used to set the background color of the element
+    5.padding:The padding property in CSS defines the innermost portion of the box model, creating space around an element's content, inside of any defined margins and/or borders. 
+    6.transform: this property applies a 2D or 3D transformation to an element.
+    7.display: inline-block :Some elements are block-level, meaning that their default display value is set to block.
+    8.border: sets an element's border.
+    */
+
+/*setting the BACKGROUND for the form*/
+
+.background {
+    background-color: lightcyan;
+    width: 1375px;
+    height: 820px; 
+} /*background for whole form*/
+
+.background1 {
+    background-color: white;
+    width: 1375px;
+    height: 500px;
+    top: 821px;
+} /* this background acts as an seperator of the form in the web using setting the background as white color*/
+
+.background2 {
+    background-color: lightcyan;
+    width: 1375px;
+    height: 674px;
+    top: 1321px;
+} /* this background is used in the page 2 for the middle portion*/
+
+/* FOR PAGE ONE*/
+
+.rotate {
+    position: absolute;
+    padding: 5px;
+    top: 20px;
+    left: -5px;
+    width: 55px;
+    height: 30px;
+    transform: rotate(270deg);
+    display: inline-block;
+    background-color: white;
+} /* this class is used for rotation, used to rotate the word FORM in the first page first line*/
+
+.a {
+    position: absolute;
+    padding: 5px 5px 5px 0px;
+    left: 35px;
+    top: 7px;
+    height: 56px;
+    width: 113px;
+    font-size: 300%;
+    display: inline-block;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: white;
+} /* this class is used for increasing the font size of the no. 1040 in the first page first line*/
+
+.b {
+    font-size: 210%;
+    position: absolute;
+    top: 33px;
+    left: 155px; 
+} /* this class is used for increasing the font size of "U.S. Individual Income Tax Return" in the first page first line*/
+
+.c {
+    padding: 4px;
+    font-size: 110%;
+    position: absolute;
+    top: 15px;
+    left: 154px;
+} /* this class is used for decreasing the font size of "Department of the Treasury—Internal Revenue Service & (99)" in the first page first line*/
+
+.d {    
+    position: absolute;
+    left: 690px;
+    top: 20px;
+    font-size: 280%;
+    display: inline-block; 
+ } /* this class is used for increasing the font size of the no. 2018 in the first page first line*/
+
+.e {
+    font-size: 110%;
+    position: absolute;
+    top: 48px;
+    left: 805px;
+} /* this class is used for decreasing the font size of "OMB No. 1545-0074" in the first page first line*/
+
+.f {
+    font-size: 110%;
+    position: absolute;
+    top: 48px;
+    left: 990px;
+} /* this class is used for decreasing the font size of "IRS Use Only—Do not write or staple in this space." in the first page first line*/
+
+.vl {
+    border-left: 2px solid black;
+    height: 58px;
+    position: absolute;
+    left: 680px;
+    top: 15px;
+}
+
+.vl2 {
+    border-left: 2px solid black;
+    height: 58px;
+    position: absolute;
+    left: 790px;
+    top: 15px;
+}
+
+.vl3 {
+    border-left: 2px solid black;
+    height: 58px;
+    position: absolute;
+    left: 970px;
+    top: 15px;
+} /* class: vl,vl2,vl3 are used to insert a vertical line which is there in the 1st line  */
+
+.tophr {
+    position: absolute;
+    top: 72px;
+    left: 5px;
+    width: 1375px;
+    border: none;
+    height: 2px;
+    color: black;
+    background-color: black;
+} /* class: tophr is used to insert a horizontal line in the first block*/
+
+.line2 {
+    padding-top: 7px;
+    position: absolute;
+    top: 75px; 
+} 
+
+.line3 {
+    position: absolute;
+    top: 115px;
+    background-color: white;
+} /* class: line 2 and line 3 is for the "filing status line...." and "Your fist name...."*/
+
+.input1{
+    background-color: rgb(247, 247, 247);
+    position: absolute;
+    top: 140px;
+} /*used for YOU FIRST NAME... input field*/
+
+.input2{
+    background-color: rgb(247, 247, 247);
+    position: absolute;
+    top: 140px;
+    left: 545px;
+} /*used for YOU LAST NAME... input field*/
+
+.input3{
+    background-color: rgb(247, 247, 247);
+    position: absolute;
+    top: 140px;
+    left: 1175px;
+}
+
+.input4{
+    background-color: rgb(247, 247, 247);
+    position: absolute;
+    top: 140px;
+    left: 1250px;
+}
+
+.input5{
+    background-color: rgb(247, 247, 247);
+    position: absolute;
+    top: 140px;
+    left: 1300px;
+}   /* input3,4,5 are used for the SSN field*/
+
+.vl4{
+    border-left: 1px solid black;
+    height: 56px;
+    position: absolute;
+    left: 540px;
+    top: 110px;
+}
+
+.vl5{
+    border-left: 1px solid black;
+    height: 56px;
+    position: absolute;
+    left: 1170px;
+    top: 110px;
+} /*vl4,5 is used for the vertical line */
+ 
+.line4 {
+    padding-top: 10px;
+    position: absolute;
+    top: 165px;
+    left: 8px;
+}
+
+.line5 {
+    position: absolute;
+    top: 205px;
+    left: 7px;
+    background-color: white;
+} /* class: line 4 and line 5 is for the "Your standard deduction...." and "If joint return, spouse's first name and initial ...."*/
+ 
+.input6 {
+    background-color: rgb(247, 247, 247);
+    position: absolute;
+    top: 230px;
+    left: 7px;
+    
+}
+
+.input7 {
+    background-color: rgb(247, 247, 247);
+    position: absolute;
+    top: 230px;
+    left: 545px;
+}
+
+.input8 {
+    background-color: rgb(247, 247, 247);
+    position: absolute;
+    top: 230px;
+    left: 1175px;
+}
+
+.input9 {
+    background-color: rgb(247, 247, 247);
+    position: absolute;
+    top: 230px;
+    left: 1250px;
+}
+
+.input10 {
+    background-color: rgb(247, 247, 247);
+    position: absolute;
+    top: 230px;
+    left: 1300px;
+}  /*input 6-10 are used for the input fields f line 5*/
+
+.vl6 {
+    border-left: 1px solid black;
+    height: 57px;
+    position: absolute;
+    left: 540px;
+    top: 202px;
+}
+
+.vl7 {
+    border-left: 1px solid black;
+    height: 51px;
+    position: absolute;
+    left: 1170px;
+    top: 202px;
+} /*vl6,7 vertical lines for the line 5 and its next input field line*/
+
+.spouse_ssn {
+    font-size: 95%;
+} /*setting the font of "Spouse’s social security number" in the line 5 to 95%*/
+
+.line6 {
+    position: absolute;
+    top: 258px;
+    left: 8px;
+    font-size: 95%;
+} /* line 6 is for "Spouse standard deduction:...." and vl8 is vertical line in the line 6 */ 
+
+.vl8 {
+    border-left: 1px solid black;
+    height: 44px;
+    position: absolute;
+    left: 1170px;
+    top: 253px;
+}
+
+.line7 {
+    position: absolute;
+    top: 300px;
+    left: 8px;
+    background-color: white;
+} /* this class is for : home address and apt no.*/
+
+.line7_1 {
+    position: absolute;
+    top: 300px;
+    left: 1175px;
+    font-size: 95%;
+} /* this class is for : Full-year health care coverage...*/
+
+.vl9 {
+    border-left: 1px solid black;
+    height: 55px;
+    position: absolute;
+    left: 1020px;
+    top: 295px;
+}
+
+.vl10 {
+    border-left: 1px solid black;
+    height: 112px;
+    position: absolute;
+    left: 1170px;
+    top: 295px;
+}
+
+.input11 {
+    background-color: rgb(247, 247, 247);
+    position: absolute;
+    top: 326px;
+    left: 8px;
+} /*input for home address*/
+
+.input12 {
+    background-color: rgb(247, 247, 247);
+    position: absolute;
+    top: 326px;
+    left: 1022px;
+} /*input for apt no.*/
+
+.line8 {
+    position: absolute;
+    top: 355px;
+    left: 8px;
+    background-color: white;
+}
+
+.line8_1{
+    position: absolute;
+    top: 355px;
+    left: 1175px;
+} /* line 8: city town.../ line 8_1 is fpr Presidential election....*/
+
+.input13 {
+    background-color: rgb(247, 247, 247);
+    position: absolute;
+    top: 380px;
+    left: 8px;
+} /* input field for city town.....*/
+
+.vl11 {
+    border-left: 1px solid black;
+    height: 108px;
+    position: absolute;
+    left: 1170px;
+    top: 465px;
+}
+
+.table_bg {
+    background-color: rgb(247, 247, 247);
+} /*setting the bg color of the table to grey color only for the input field*/
+
+.sign_here {
+    position: absolute;
+    left: 8px;
+    top: 575px;
+    font-size: 170%;
+    display: inline-block;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.under_penalties {
+    position: absolute;
+    left: 160px;
+    top: 575px;
+    font-size: 90%;
+    display: inline-block;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.sign_here_below {
+    position: absolute;
+    left: 7px;
+    top: 640px;
+    font-size: 80%;
+    display: inline-block;
+    font-family: Arial, Helvetica, sans-serif;
+} /*this class is for : "joint returns See intstructions...."*/ 
+
+.triangle{
+    position: absolute;
+    left: 175px;
+    top: 633px;
+    display: inline-block;
+    width: 0;
+    height: 0;
+    border-top: 30px solid transparent;
+    border-left: 20px solid black;
+    border-bottom: 30px solid transparent;
+} /* inserting a triangle symbol*/
+
+.your-sign {
+    position: absolute;
+    top: 615px;
+    left: 200px;
+    background-color: white;
+}
+
+.your-sign1 {
+    position: absolute;
+    top: 635px;
+    left: 200px;
+} /*input field foryour signature*/
+
+.table {
+    position: absolute;
+} /* fixing the table postion*/
+
+.input-bg {
+    background-color: white;
+} /*input bg for the your signature field etc.*/
+
+.custom_hr {
+    position: absolute;
+    top: 662px;
+    left: 200px;
+    width: 1180px;
+    border: none;
+    height: 1px;
+    color: black;
+    background-color: black;            
+} /*inserting a custom horizontal line*/
+
+.s-sign {
+    position: absolute;
+    top: 664px;
+    left: 200px;
+    background-color: white;
+}
+
+.s-sign1 {
+    position: absolute;
+    top: 684px;
+    left: 200px;
+} /*s-sign and s-sign1 class is for the spouse signature and input field */
+
+.custom_hr1 {
+    position: absolute;
+    top: 710px;
+    left: 8px;
+    width: 1375px;
+    border: none;
+    height: 1px;
+    color: black;
+    background-color: black;            
+} /*inserting a custom horizontal line*/
+
+.vl12 {
+    border-left: 1px solid black;
+    height: 95px;
+    position: absolute;
+    left: 612px;
+    top: 615px;
+}
+
+.vl13 {
+    border-left: 1px solid black;
+    height: 95px;
+    position: absolute;
+    left: 755px;
+    top: 615px;
+}
+
+.vl14 {
+    border-left: 1px solid black;
+    height: 95px;
+    position: absolute;
+    left: 1076px;
+    top: 615px;
+}
+
+.paid {
+    position: absolute;
+    left: 8px;
+    top: 720px;
+    font-size: 144%;
+    display: inline-block;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.paid1{
+    position: absolute;
+    top: 713px;
+    left: 200px;
+    background-color: white;
+} /*used for preparer name signature and firm detatils*/
+
+.vl15 {
+    border-left: 1px solid black;
+    height: 44px;
+    position: absolute;
+    left: 527px;
+    top: 711px;
+}
+
+.vl16 {
+    border-left: 1px solid black;
+    height: 65px;
+    position: absolute;
+    left: 939px;
+    top: 711px;
+}
+
+.vl17 {
+    border-left: 1px solid black;
+    height: 43px;
+    position: absolute;
+    left: 1052px;
+    top: 711px;
+}
+
+.vl18 {
+    border-left: 1px solid black;
+    height: 65px;
+    position: absolute;
+    left: 1162px;
+    top: 711px;
+}
+
+.custom_hr2 {
+    position: absolute;
+    top: 754px;
+    left: 200px;
+    width: 962px;
+    border: none;
+    height: 1px;
+    color: black;
+    background-color: black;            
+}
+
+.custom_hr3 {
+    position: absolute;
+    top: 777px;
+    left: 199px;
+    width: 1180px;
+    border: none;
+    height: 1px;
+    color: black;
+    background-color: black;            
+}
+
+.custom_hr4 {
+    position: absolute;
+    top: 798px;
+    left: 8px;
+    width: 1375px;
+    border: none;
+    height: 1px;
+    color: black;
+    background-color: black;            
+}
+
+.lastline {
+    position: absolute;
+    top: 805px;
+    left: 8px;
+} /*last line of the first page*/
+
+.next-page {
+    top: 815px;
+    background-color: white;
+}
+
+/*SECOND PAGE top starts from 1321*/
+
+.bold {
+    font-size: 145%;
+}
+
+.p2hr1 {
+    position: absolute;
+    top: 1577px;
+    left: 8px;
+    width: 1375px;
+    border: none;
+    height: 1px;
+    color: black;
+    background-color: black;            
+} /*page two first custom horizontal line*/
+
+.sidetext1 {    
+    position: absolute;
+    left: 15px;
+    top: 1578px;
+    font-size: 85%;
+    display: inline-block;
+    font-family: Arial, Helvetica, sans-serif;
+} /*this class is for : attach form(s).......*/
+
+.sidebackground {
+    position: absolute;
+    background-color: white;
+    width: 150px;
+    left: 10px;
+    top: 1578px;
+    height: 616px;
+    display: inline-block;
+} /*setting the left hand side of the 2nd page as white background*/
+
+.sidetext3 {
+    position: absolute;
+    left: 15px;
+    top: 2050px;
+    font-size: 150%;
+    font-family: Arial, Helvetica, sans-serif;
+} /*used for : "Refund"*/
+
+.sidetext4 {
+    position: absolute;
+    left: 15px;
+    top: 2090px;
+    font-size: 80%;
+    font-family: Arial, Helvetica, sans-serif;
+} /*used for : "Direct deposit?"*/
+
+.sidetext5 {
+    position: absolute;
+    left: 15px;
+    top: 2150px;
+    font-size: 85%;
+    font-family: Arial, Helvetica, sans-serif;
+} /*used for : "Amount You Owe"*/
+
+.sidebackground2 {    
+    position: absolute;
+    background-color: white;
+    width: 250px;
+    left: 1169px;
+    top: 1578px;
+    height: 616px;
+    display: inline-block;
+} /*setting the right hand side of the 2nd page as white background*/
+
+.sidebox {
+    position: absolute;
+    top: 1730px;
+    border: 1px solid black;
+    border-radius: 15px;
+    height: 260px;
+    width: 130px;
+    left: 13px;
+    font-size: 85%;
+    padding: 5px;
+} /**creating a text box for "standard deduction for...."*/
+
+.alignment {
+    position: absolute;
+    top: 25px;
+    left: -23px;
+}
+
+.whiteline {
+    border-left: 14px solid white;
+    height: 21px;
+    position: absolute;
+    left: 154px;
+    top: 1750px;
+}
+
+.wlhr1 {
+    position: absolute;
+    top: 1750px;
+    left: 154px;
+    width: 25px;
+    border: none;
+    height: 1px;
+    background-color: black;
+}
+
+.wlhr2 {
+    position: absolute;
+    top: 1771px;
+    left: 154px;
+    width: 25px;
+    border: none;
+    height: 1px;
+    background-color: black;
+} /*whiteline wlhr1 and 2 are used for styling purpose of the text box used for "standard deduction for...." */
+
+.p21 {
+    top: 1578px;
+    position: absolute;
+    left: 159px;
+    width: 1224px;
+} /* all the second page middle contents are designed using this class*/
+
+.p2hr2 {
+    position: absolute;
+    top: 2037px;
+    left: 8px;
+    width: 1375px;
+    border: none;
+    height: 1px;
+    color: black;
+    background-color: black;            
+}
+
+.p2hr3 {
+    position: absolute;
+    top: 2146px;
+    left: 8px;
+    width: 1375px;
+    border: none;
+    height: 1px;
+    color: black;
+    background-color: black;            
+}
+
+.p2hr4 {
+    position: absolute;
+    top: 2193px;
+    left: 8px;
+    width: 1375px;
+    border: none;
+    height: 1px;
+    color: black;
+    background-color: black;            
+} /* p2hr2,3,4 are the horizontal lines which is wide as the page*/
+
+.p2lastline {
+    position: absolute;
+    top: 2195px;
+    left: 12px;
+} /* last line of page 2*/
+
+.bold2 {
+    font-size: 125%;
+    font-family: Arial, Helvetica, sans-serif;
+} /*bolding the 1040 in the last line*/
+
+.mainvl1 {
+    border-left: 2px solid black;
+    height: 616px;
+    position: absolute;
+    left: 1127px;
+    top: 1578px;
+}
+
+.mainvl2 {
+    border-left: 2px solid black;
+    height: 589px;
+    position: absolute;
+    left: 1169px;
+    top: 1578px;
+}
+
+.mainvl3 {
+    border-left: 2px solid black;
+    height: 589px;
+    position: absolute;
+    left: 1328px;
+    top: 1578px;
+} /*mainvl1,2,3 are vertical lines in the page 2*/
+
+.sidevl1 {
+    border-left: 1px solid black;
+    height: 87px;
+    position: absolute;
+    left: 422px;
+    top: 1600px;
+}
+
+.sidevl2 {
+    border-left: 1px solid black;
+    height: 87px;
+    position: absolute;
+    left: 470px;
+    top: 1600px;
+}
+
+.sidevl3 {
+    border-left: 1px solid black;
+    height: 87px;
+    position: absolute;
+    left: 627px;
+    top: 1600px;
+}
+
+.sidevl4 {
+    border-left: 1px solid black;
+    height: 87px;
+    position: absolute;
+    left: 680px;
+    top: 1600px;
+} /*sidevl1,2,3,4 are used for vertical line which is in small size in the page 2*/
+
+.sidehr1 {
+    position: absolute;
+    top: 1622px;
+    left: 422px;
+    width: 258px;
+    border: none;
+    height: 1px;
+    color: black;
+    background-color: black;
+}
+
+.sidehr2 {
+    position: absolute;
+    top: 1643px;
+    left: 422px;
+    width: 258px;
+    border: none;
+    height: 1px;
+    color: black;
+    background-color: black;
+}
+.sidehr3 {
+    position: absolute;
+    top: 1665px;
+    left: 422px;
+    width: 258px;
+    border: none;
+    height: 1px;
+    color: black;
+    background-color: black;
+}
+.sidehr4 {
+    position: absolute;
+    top: 1686px;
+    left: 422px;
+    width: 258px;
+    border: none;
+    height: 1px;
+    color: black;
+    background-color: black;
+}/*sideh1,2,3,4 are used as small horizontal lines in the page 2*/
+
+.mh1 {
+    position: absolute;
+    top: 1600px;
+    left: 1128px;
+    width: 254px;
+    border: none;
+    height: 1px;
+    color: black;
+    background-color: black;
+}
+
+.mh2 {
+    position: absolute;
+    top: 1624px;
+    left: 1128px;
+    width: 254px;
+    border: none;
+    height: 1px;
+    color: black;
+    background-color: black;
+}
+
+.mh3 {
+    position: absolute;
+    top: 1645px;
+    left: 1128px;
+    width: 254px;
+    border: none;
+    height: 1px;
+    color: black;
+    background-color: black;
+}
+
+.mh4 {
+    position: absolute;
+    top: 1666px;
+    left: 1128px;
+    width: 254px;
+    border: none;
+    height: 1px;
+    color: black;
+    background-color: black;
+}
+
+.mh5 {
+    position: absolute;
+    top: 1687px;
+    left: 1128px;
+    width: 254px;
+    border: none;
+    height: 1px;
+    color: black;
+    background-color: black;
+}
+
+.mainh6 {
+    position: absolute;
+    top: 1709px;
+    left: 1128px;
+    width: 254px;
+    border: none;
+    height: 1px;
+    color: black;
+    background-color: black;
+}
+.mainh7 {
+    position: absolute;
+    top: 1752px;
+    left: 1128px;
+    width: 254px;
+    border: none;
+    height: 1px;
+    color: black;
+    background-color: black;
+}
+.mainh8 {
+    position: absolute;
+    top: 1772px;
+    left: 1128px;
+    width: 254px;
+    border: none;
+    height: 1px;
+    color: black;
+    background-color: black;
+}
+.mainh9 {
+    position: absolute;
+    top: 1794px;
+    left: 1128px;
+    width: 254px;
+    border: none;
+    height: 1px;
+    color: black;
+    background-color: black;
+}
+.mainh10 {
+    position: absolute;
+    top: 1815px;
+    left: 1128px;
+    width: 254px;
+    border: none;
+    height: 1px;
+    color: black;
+    background-color: black;
+}
+
+.mh11 {
+    position: absolute;
+    top: 1860px;
+    left: 1128px;
+    width: 254px;
+    border: none;
+    height: 1px;
+    color: black;
+    background-color: black;
+}
+.mh12 {
+    position: absolute;
+    top: 1882px;
+    left: 1128px;
+    width: 254px;
+    border: none;
+    height: 1px;
+    color: black;
+    background-color: black;
+}
+.mh13 {
+    position: absolute;
+    top: 1904px;
+    left: 1128px;
+    width: 254px;
+    border: none;
+    height: 1px;
+    color: black;
+    background-color: black;
+}
+.mh14 {
+    position: absolute;
+    top: 1928px;
+    left: 1128px;
+    width: 254px;
+    border: none;
+    height: 1px;
+    color: black;
+    background-color: black;
+}
+.mh15 {
+    position: absolute;
+    top: 1948px;
+    left: 1128px;
+    width: 254px;
+    border: none;
+    height: 1px;
+    color: black;
+    background-color: black;
+}
+
+.mh16{
+    position: absolute;
+    top: 1970px;
+    left: 1128px;
+    width: 254px;
+    border: none;
+    height: 1px;
+    color: black;
+    background-color: black;
+}
+.mh17 {
+    position: absolute;
+    top: 2015px;
+    left: 1128px;
+    width: 254px;
+    border: none;
+    height: 1px;
+    color: black;
+    background-color: black;
+}
+.mh18 {
+    position: absolute;
+    top: 2058px;
+    left: 1128px;
+    width: 254px;
+    border: none;
+    height: 1px;
+    color: black;
+    background-color: black;
+}
+.mh19 {
+    position: absolute;
+    top: 2080px;
+    left: 1128px;
+    width: 254px;
+    border: none;
+    height: 1px;
+    color: black;
+    background-color: black;
+}
+.mh20 {
+    position: absolute;
+    top: 2167px;
+    left: 1128px;
+    width: 254px;
+    border: none;
+    height: 1px;
+    color: black;
+    background-color: black;
+} /*ml1,2,3,4,5,11-20 & mainh6,7,8,9,10 the main horizontal line used for the right hand side of the page 2 */
+
+.borderbg {
+    background-color: rgb(247, 247, 247);
+} /*this class is used for setting the bg color of the input fields in the page 2 to gray*/
+
+.boxbg {
+    width: 1rem;
+    background-color: rgb(247, 247, 247);
+} /*this is used to change the color of the input field which is for routing and account number*/
+
+.greybox1 {
+    position: absolute;
+    width: 42px;
+    height: 67px;
+    background-color: rgb(194, 189, 165);
+    border: none;
+    top: 2079px;
+    left: 1128px;
+}
+
+.greybox2 {
+    position: absolute;
+    width: 254px;
+    height: 24px;
+    background-color: rgb(194, 189, 165);
+    border: none;
+    top: 2168px;
+    left: 1128px;
+} /*greybox 1,2 are place at the bottom right of the page 2*/

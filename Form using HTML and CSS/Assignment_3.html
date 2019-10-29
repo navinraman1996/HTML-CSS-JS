@@ -1,0 +1,426 @@
+<!DOCTYPE html> <!--it is a declaration to instruct the web browser about the version of the HTML-->
+<html> <!--html tag tells the browser that this is an HTML document-->
+  <head> <!--head tag is a metatag which is a data about data of the document-->
+        <meta charset="utf-8"> <!--meta tag basically specifies which character set a website is written with. Here is a definition of UTF-8: UTF-8 (U from Universal Character Set + Transformation Format—8-bit)-->
+        <title>Assignmet_3_NAVIN_RAMAN</title> <!-- Title tag used to declare the title or name of the HTML document -->
+        <link rel="stylesheet" href="Assignment_3_CSS.css"> <!--importing or directing this html file with the css file-->
+  </head>
+  <body class> <!--body tag contains all the contents of the document-->
+        <form action="/action_page.php" method="POST" id="nameform">
+            
+            <!--Here span tag is used for grouping the titles of the form and also used to diferentiatethem by setting different font sizes
+                1. &nbsp; is a non-breaking space which is used to create a space in a line
+                2. &emsp; is an emphasized space. (wider than normal space)
+                3. <p> tag specifies a paragraph of text. It is a block-level element.
+                4. <b> tag is used for bolding purpose .
+                5. <br> tag is empty tag and which is used to insert a sinlge line break
+                6. <form> tag is used to create a form for the user input, which is used to pass the user data to a specified URL.
+                7. class element in each tag is refering a class in the css file with respect to the value of the class name    
+            -->
+           <div ></div>
+            <div class="background"> <!--for example: this div block is calling the class called background from the css file-->
+                <span class="rotate"> 
+                    Form&nbsp;&nbsp;&nbsp;&nbsp;
+                </span>
+                <span class="a">
+                    <b>1040&nbsp;</b>
+                </span>
+                <span class="b">
+                    <b>U.S. Individual Income Tax Return</b>
+                </span>
+                <span class="c">
+                    Department of the Treasury—Internal Revenue Service &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>(99)</b>
+                </span>
+                <span class="vl"></span>
+                <span class="d">
+                    20<b>18</b>
+                </span>
+                <span class="vl2"></span>
+                <span class="e">
+                    OMB No. 1545-0074
+                </span>
+                <span class="vl3"></span>
+                <span class="f">
+                    IRS Use Only—Do not write or staple in this space.
+                </span>
+                <br><br><br><hr>
+                <span class="tophr"></span>
+    
+                <div class="line2">
+                    &nbsp;Filing status: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <span>
+                    <input type="checkbox" name="Filing" value="Single"> Single &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <input type="checkbox" name="Filing" value="Married filing jointly"> Married filing jointly &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <input type="checkbox" name="Filing" value="Married filing seperately"> Married filing seperately &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <input type="checkbox" name="Filing" value="Head of household"> Head of household &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <input type="checkbox" name="Filing" value="Qualifying widow(er)"> Qualifying widow(er)&nbsp;
+                    <input type="text" name="Filing" size="22" class="table_bg">
+                    </span>
+
+                    <!--
+                        1. <input> is the input field where the user can enter data, The <input> element is the most important form element.
+                        2. <input> can be displayed n several ways, depending on the "type" attribute.
+                        3. <input type="checkbox"> is used to provide the user with a checkbox entry.
+                        4. The value attribute specifies the value of an <input> element.
+                        5. The size attribute specifies the visible width of an <input> element.
+                        6. <hr> is a horizontal line. -->
+
+                </div><br><hr>
+            
+                <span class="line3">
+                        Your first name and initial &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Last name &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <b>Your social security number</b>&nbsp;
+                </span>
+            
+                <input type="text" name="Your first name and initial" size="76" required pattern="[A-za-z]+" class="input1">
+                <input type="text" name="Last name"size="90" required pattern="[A-za-z]+" class="input2">&nbsp;
+                <input type="text" name="Your social security number" minlenght="3" maxlength="3" size="7" required pattern="[0-9]{3}" class="input3"><input type="text" name="Your social security number" minlenght="3" maxlength="2" size="3" required pattern="[0-9]{2}" class="input4"><input type="text" name="Your social security number" minlenght="4" maxlength="4" size="7" required pattern="[0-9]{4}" class="input5">
+                <br><br><hr>
+                <span class="vl4"></span><span class="vl5"></span>
+
+                <!--    1. minlenght attribute specifies the minimum no. of characters allowed in the <input> element
+                        2. maxlength attribute specifies the maximum number of characters allowed in the <input> element.
+                        3. required attribute is a boolean attribute, it specifies that an input field must be filled out before submitting the form.
+                        4. pattern attribute specifies a regular expression that the <input> element's value is checked against on form submission, here it is checking whether the user is entering a number for ssn block rather than text or symbols.
+                            pattern="[0-9]{2}", which allows two digit number input, pattern="[0-9]{3}", which allows three digit number input, pattern="[0-9]{4}", which allows four digit number input  
+                            pattern="[A-za-z]+", which allows n no. of characters of alphabets, both capital and normal -->
+
+                <span class="line4">
+                    Your standard deduction: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <input type="checkbox" name="Your standard deduction" value="Someone can claim you as a dependent"> Someone can claim you as a dependent &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <input type="checkbox" name="Your standard deduction" value="You were born before January 2, 1954"> You were born before January 2, 1954 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <input type="checkbox" name="Your standard deduction" value="You are blind"> You are blind
+                </span><br><hr>
+
+                <span class="line5">
+                    &nbsp;&nbsp; If joint return, spouse's first name and initial &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Last name &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <b class="spouse_ssn">Spouse’s social security number</b><br>
+                </span>    
+
+                <input type="text" name="Your first name and initial" size="76" required pattern="[A-za-z]+" class="input6">
+                <input type="text" name="Last name"size="90" required pattern="[A-za-z]+" class="input7">&nbsp;
+                <input type="text" name="Your social security number" minlenght="3" maxlength="3" size="7" required pattern="[0-9]{3}" class="input8"><input type="text" name="Your social security number" minlenght="3" maxlength="2" size="3" required pattern="[0-9]{2}" class="input9"><input type="text" name="Your social security number" minlenght="4" maxlength="4" size="7" required pattern="[0-9]{4}" class="input10">
+                
+                <br><br><hr>
+                <span class="vl6"></span><span class="vl7"></span>    
+
+                <span class="line6">
+                    Spouse standard deduction:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <input type="checkbox" name="Spouse standard deduction:" value="Someone can claim your spouse as a dependent"> Someone can claim your spouse as a dependent &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <input type="checkbox" name="Spouse standard deduction:" value="Spouse were born before January 2, 1954"> Spouse were born before January 2, 1954 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <input type="checkbox" name="Full-year health care coverage or exempt (see inst.)" value="Full-year health care coverage or exempt (see inst.)">Full-year health care coverage<br>
+                    <input type="checkbox" name="Spouse standard deduction:" value="Spouse is blind"> Spouse is blind &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <input type="checkbox" name="Spouse standard deduction:" value="Spouse itemizes on a separate return or you were dual-status alien">Spouse itemizes on a separate return or you were dual-status alien &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; or exempt (see inst.)  
+                </span><br><hr>
+
+                <span class="vl8"></span>
+                
+                <span class="line7">
+                    Home address (number and street). If you have a P.O. box, see instructions. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Apt. no. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                </span>
+
+                <span class="line7_1">
+                    <b>Presidential Election Campaign</b><br>
+                    (see inst.)&nbsp;&nbsp;&nbsp;<input type="checkbox" name="Presidential Election Campaign" value="Presidential Election Campaign"> <b>You</b> &nbsp;&nbsp;<input type="checkbox" name="Presidential Election Campaign" value="Presidential Election Campaign"> <b>Spouse</b>
+                </span>
+
+                <span class="vl9"></span><span class="vl10"></span>
+
+                <input type="text" name="Home address"size="149" required class="input11">
+                <input type="text" name="Apt. no."size="17" required pattern="[0-9]{4}" class="input12">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                
+                <br><br><hr>
+
+                <span class="line8">
+                    City, town or post office, state, and ZIP code. If you have a foreign address, attach Schedule 6.  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                </span>
+
+                <!--    pattern="[A-Z][A-Za-z' -]+", is used to specify that the user input must contain a capital alphabet followed by small or capital letter and can contain ' and -, here it is used for the "city, town" user entry.-->
+
+                <span class="line8_1">
+                    If more than four dependents,<br>
+                    see inst. and ✓ here ▶ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <input type="checkbox" name="If more than four dependents" value="If more than four dependents">
+                </span>
+            
+                <input type="text" name="City, town or post office, state, and ZIP code"size="172" required pattern="[A-Z][A-Za-z' -]+"  class="input13">
+
+                <br><br><hr>
+
+                <!--    1. table tag is used to define a HTML table    
+                        2. <th> element is used to define a table header
+                        3. <td> element is used to define a table cell
+                        4. <tr> element is used to define a table row
+                        5. border is a CSS property which is used to provide border for the table
+                        6. border-collapse is used to collapse a border into another border
+                -->
+
+                <table width="1370px" border='1px' class="table"> <!--fixing the width of the table to 29cm-->
+                    <tr> <!--First row-->
+                        <th align = left width = 530px><b>Dependents</b> (see instructions):<br> <b>(1)</b> First name &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Last name</td> <!--Fixing a width size of 530px to the first cell in the first row-->
+                        <th width = 200px><b>(2)</b> Social security number</td> <!--Fixing a width size of 200px to the second cell in the first row-->
+                        <th width = 200px> <!--Fixing a width size of 200px to the third cell in the first row-->
+                            <label for="t1"> <b>(3)</b>Relationship to you </label> <!--<label> tag is used to create labels for items in a user interface-->
+                            <datalist id="l1"> <!--The Datalist element is used to suggest input values to the user, thereby providing an "autocomplete" feature on form elements-->
+                                <option>Mother</option> <!--<option> element is used to define an item contained in a <select> , an <optgroup> , or a <datalist> element-->
+                                <option>Father</option>
+                                <option>Brother</option>
+                                <option>Sister</option>
+                                <option>Husband</option>
+                                <option>Wife</option>
+                                <option>Son</option>
+                                <option>Daughter</option>
+                                <option>Grandmother</option>
+                                <option>Grandfather</option>
+                            </datalist>
+                        </th>
+                        <th colspan="=2" scope="colgroup" width=390>(4) &#10004; if qualifies for (see inst.):<br>
+                        Child tax credit &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Credit for other dependents
+                        </th>
+                    </tr>       
+                    <tr> <!--Second row-->
+                        <td><input type="text" name="First name" size="36" required pattern="[A-Za-z]+" class="table_bg"><input type="text" name="Last name" size="36" required pattern="[A-Za-z]+" class="table_bg"></td>
+                        <td><input type="text" name="Social security number" minlength="3" maxlength="3" size="4" required pattern="[0-9]{3}" class="table_bg"><input type="text" name="Social security number" minlenght="2" maxlength="2" size="3" required pattern="[0-9]{2}" class="table_bg"><input type="text" name="Social security number" minlenght="4" maxlength="4" size="8" required pattern="[0-9]{4}" class="table_bg"></td>
+                        <td><input type="text" id="t1" name="Relationship to you" list="l1" size="25" class="table_bg" required 
+                            pattern="[Mm]other|[Ff]ather|[Bb]rother|[Ss]ister|[Hh]usband|[Ww]ife|[Ss]on|[Dd]aughter|[Gg]randmother|[Gg]randfather"> <!--Here the pattern default input fields which is in datalist are idicated which is used to get these options quicker by typing the first letter of the option-->
+                        </td>
+                        <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="checkbox" name="Child tax credit">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="checkbox" name="Credit for other dependents"></td>
+                    </tr>
+                    <tr> <!--Third row-->
+                        <td><input type="text" name="First name" size="36" required pattern="[A-Za-z]+" class="table_bg"><input type="text" name="Last name" size="36" required pattern="[A-Za-z]+" class="table_bg"></td>
+                        <td><input type="text" name="Social security number" minlenght="3" maxlength="3" size="4" required pattern="[0-9]{3}" class="table_bg"><input type="text" name="Social security number" minlenght="2" maxlength="2" size="3" required pattern="[0-9]{2}" class="table_bg"><input type="text" name="Social security number" minlenght="4" maxlength="4" size="8" required pattern="[0-9]{4}" class="table_bg"></td>
+                        <td><input type="text" id="t1" name="Relationship to you" list="l1" size="25" class="table_bg" required
+                            pattern="[Mm]other|[Ff]ather|[Bb]rother|[Ss]ister|[Hh]usband|[Ww]ife|[Ss]on|[Dd]aughter|[Gg]randmother|[Gg]randfather">
+                        </td>
+                        <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="checkbox" name="Child tax credit">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="checkbox" name="Credit for other dependents"></td>
+                    </tr>
+                    <tr> <!--Fourth row-->
+                        <td><input type="text" name="First name" size="36" required pattern="[A-Za-z]+" class="table_bg"><input type="text" name="Last name" size="36" required pattern="[A-Za-z]+" class="table_bg"></td>
+                        <td><input type="text" name="Social security number" minlenght="3" maxlength="3" size="4" required pattern="[0-9]{3}" class="table_bg"><input type="text" name="Social security number" minlenght="2" maxlength="2" size="3" required pattern="[0-9]{2}" class="table_bg"><input type="text" name="Social security number" minlenght="4" maxlength="4" size="8" required pattern="[0-9]{4}" class="table_bg"></td>
+                        <td><input type="text" id="t1" name="Relationship to you" list="l1" size="25" class="table_bg" required
+                            pattern="[Mm]other|[Ff]ather|[Bb]rother|[Ss]ister|[Hh]usband|[Ww]ife|[Ss]on|[Dd]aughter|[Gg]randmother|[Gg]randfather">
+                        </td>
+                        <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="checkbox" name="Child tax credit">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="checkbox" name="Credit for other dependents"></td>
+                    </tr>
+                    <tr> <!--Fifth row-->
+                        <td><input type="text" name="First name" size="36" required pattern="[A-Za-z]+" class="table_bg"><input type="text" name="Last name" size="36" required pattern="[A-Za-z]+" class="table_bg"></td>
+                        <td><input type="text" name="Social security number" minlenght="3" maxlength="3" size="4" required pattern="[0-9]{3}" class="table_bg"><input type="text" name="Social security number" minlenght="2" maxlength="2" size="3" required pattern="[0-9]{2}" class="table_bg"><input type="text" name="Social security number" minlenght="4" maxlength="4" size="8" required pattern="[0-9]{4}" class="table_bg"></td>
+                        <td><input type="text" id="t1" name="Relationship to you" list="l1" size="25" class="table_bg" required
+                            pattern="[Mm]other|[Ff]ather|[Bb]rother|[Ss]ister|[Hh]usband|[Ww]ife|[Ss]on|[Dd]aughter|[Gg]randmother|[Gg]randfather">
+                        </td>
+                        <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="checkbox" name="Child tax credit">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="checkbox" name="Credit for other dependents"></td>
+                    </tr>
+                    
+                </table>
+            
+                <span class="vl11"></span>
+
+                <span class="sign_here"> <!--SIGN_HERE class selector is used for changing the font size and placement of the text-->
+                    <b>Sign <br>
+                    Here</b>
+                </span>
+                <br><br>
+                <span class="under_penalties">
+                    Under penalties of perjury, I declare that I have examined this return and accompanying schedules and statements, and to the best of my knowledge and belief, they are true,<br>
+                    correct, and complete. Declaration of preparer (other than taxpayer) is based on all information of which preparer has any knowledge.
+                </span>
+
+                <span class="sign_here_below">
+                    Joint return?<br>
+                    See instructions.<br>
+                    Keep a copy for<br>
+                    your records<br>   
+                </span>
+            
+                <span class="your-sign">
+                    Your signature &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Date &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Your occupation &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; If the IRS sent you an Identity Protection PIN,<br>
+                </span>
+            
+                <span class="your-sign1">
+                    <input type="text" name="Your signature" size="58" required pattern="[A-Za-z]+" class="input-bg"><input type="date" name="Date" class="input-bg" required><input type="text" name="Your occupation" size="44" class="table_bg" required pattern="[A-Za-z]+">&nbsp; enter it here (see inst.) &nbsp; &nbsp; <input class="boxbg" type="text" name="Identity Protection PIN" minlenght="1" maxlength="1" class="table_bg" required pattern="[0-9]{1}"><input class="boxbg" type="text" name="Identity Protection PIN" minlenght="1" maxlength="1" class="table_bg" required pattern="[0-9]{1}"><input class="boxbg" type="text" name="Identity Protection PIN" minlenght="1" maxlength="1" class="table_bg" required pattern="[0-9]{1}"><input class="boxbg" type="text" name="Identity Protection PIN" minlenght="1" maxlength="1" class="table_bg" required pattern="[0-9]{1}"><input class="boxbg" type="text" name="Identity Protection PIN" minlenght="1" maxlength="1" class="table_bg" required pattern="[0-9]{1}"><input class="boxbg" type="text" name="Identity Protection PIN" minlenght="1" maxlength="1" class="table_bg" required pattern="[0-9]{1}"><br>
+                </span>
+
+                <span class="custom_hr"></span>
+
+                <span class="s-sign">
+                    Spouse’s signature. If a joint return, <b>both</b> must sign. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Date &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Spouse’s occupation &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; If the IRS sent you an Identity Protection PIN,<br>
+                </span>
+
+                <span class="s-sign1">
+                    <input type="text" name="Spouse’s signature" size="58" required pattern="[A-Za-z]+" class="input-bg"><input type="date" name="Date" class="input-bg" required><input type="text" name="Spouse’s occupation" size="44" class="table_bg" required pattern="[A-Za-z]+">&nbsp; enter it here (see inst.) &nbsp; &nbsp; <input class="boxbg" type="text" name="Identity Protection PIN" minlenght="1" maxlength="1" class="table_bg" required pattern="[0-9]{1}"><input class="boxbg" type="text" name="Identity Protection PIN" minlenght="1" maxlength="1" class="table_bg" required pattern="[0-9]{1}"><input class="boxbg" type="text" name="Identity Protection PIN" minlenght="1" maxlength="1" class="table_bg" required pattern="[0-9]{1}"><input class="boxbg" type="text" name="Identity Protection PIN" minlenght="1" maxlength="1" class="table_bg" required pattern="[0-9]{1}"><input class="boxbg" type="text" name="Identity Protection PIN" minlenght="1" maxlength="1" class="table_bg" required pattern="[0-9]{1}"><input class="boxbg" type="text" name="Identity Protection PIN" minlenght="1" maxlength="1" class="table_bg" required pattern="[0-9]{1}"><br>
+                </span>
+            
+                <span class="triangle"></span>
+                <span class="custom_hr1"></span>
+                <span class="vl12"></span><span class="vl13"></span><span class="vl14"></span>
+
+                <span class="paid"> <!--PAID class selector is used for changing the font size and placement of the text-->
+                    <b>Paid <br>
+                    Preparer <br>
+                    Use Only</b>
+                </span>
+
+                <span class="paid1">
+                    Preparer’s name &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Preparer’s signature &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; PTIN &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Firm’s EIN &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Check if:&nbsp;&nbsp;&nbsp;&nbsp&nbsp;&nbsp;&nbsp;&nbsp&nbsp;&nbsp;&nbsp;&nbsp&nbsp;&nbsp;&nbsp;&nbsp&nbsp;&nbsp;&nbsp;&nbsp&nbsp;&nbsp;&nbsp;&nbsp&nbsp;&nbsp;&nbsp;&nbsp&nbsp;&nbsp;&nbsp;&nbsp&nbsp;&nbsp;<br>
+                    <input type="text" name="Preparer’s name" size="45" required pattern="[A-Za-z]+" class="table_bg"><input type="text" name="Preparer’s signature" size="58" required pattern="[A-Za-z]+"><input type="text" name="PTIN" size="12" required pattern="[0-9]{9}" class="table_bg"><input type="text" name="Firm’s EIN" size="12" required required pattern="[0-9]{9}" class="table_bg">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="checkbox" name="3rd Party Designee">&nbsp; 3rd Party Designee <br>
+                    Firm’s name ▶<input type="text" name="Firm’s name" size="93" class="table_bg" required pattern="[A-Za-z]+">Phone no. &nbsp;<input type="tel" name="Phone no." size="18" required pattern="[0-9]{3}[ -][0-9]{3}[ -][0-9]{4}" class="table_bg">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="checkbox" name="3rd Party Designee">&nbsp; Self-employed <br>
+                    Firm’s address ▶<input type="text" name="Firm’s address" size="157" class="table_bg" required>
+                </span>
+
+                <!--inserting vertical and horizontal lines-->
+                <span class="vl15"></span>
+                <span class="vl16"></span>
+                <span class="vl17"></span>
+                <span class="vl18"></span>
+                <span class="custom_hr2"></span>
+                <span class="custom_hr3"></span>
+                <span class="custom_hr4"></span>
+            
+                <span class=lastline>
+                    <b>For Disclosure, Privacy Act, and Paperwork Reduction Act Notice, see separate instructions.</b> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Cat. No. 11320B &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Form <b>1040</b> (2018)
+                </span>
+                <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+            </div>
+
+            <!--Moving to next page-->
+
+            <span class="background1">
+                <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+            </span>
+            
+            <div class="background2">
+                Form 1040 (2018) &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Page <span class="bold"><b>2</b></span>
+            </div>
+            
+            <span class="p2hr1"></span>
+
+            <span class="sidebackground"></span>
+            <span class="sidebackground2"></span>
+
+            <!--side text contents: used to change the font size and placement of the texts-->
+            <span class="sidetext1">
+                <br><br>
+                Attach Form(s) <br>
+                W-2. Also attach <br>
+                Form(s) W-2G and <br>
+                1099-R if tax was <br>
+                withheld <br>
+            </span>
+
+            <span class="sidetext3"><b>Refund</b> </span>
+            
+            <span class="sidetext4">
+                Direct deposit?<br>
+                See instructions.
+            </span>
+            
+            <span class="sidetext5">
+                <b>Amount You Owe</b> 
+            </span>
+            
+            <span class="sidebox">
+                    <b>Standard <br>
+                    Deduction for—</b>
+                    <ul class="alignment"> <!--Using unordered list for the bullet points in the sidebox-->
+                        <li>Single or married filing separately, $12,000</li>
+                        <li>Married filing<br>jointly or Qualifying<br>widow(er),<br> $24,000</li>
+                        <li>Head of <br>household,<br> $18,000</li>
+                        <li>If you checked<br> any box under Standard deduction, see instructions.</li>
+                    </ul> 
+            </span>
+
+            <span class="whiteline"></span>
+            <span class="wlhr1"></span>
+            <span class="wlhr2"></span>
+            <span class="greybox1"></span><span class="greybox2"></span>
+
+            <span class="p21">
+                    &nbsp;&nbsp;<b>1</b>&nbsp;&nbsp;&nbsp;&nbsp;Wages, salaries, tips, etc. Attach Form(s) W-2&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <b>1 </b>&emsp;<input type="text" name="Wages, salaries, tips, etc. Attach Form(s) W-2" size="19" required pattern="[0-9]+" class="borderbg"><input type="text" class="borderbg" name="Wages, salaries, tips, etc. Attach Form(s) W-2" size="3" required pattern="[0-9]{2}"><br>
+                    &nbsp;&nbsp;<b>2a</b>&nbsp;&nbsp;&nbsp;Tax-exempt interest&nbsp;&nbsp;&nbsp;&nbsp&nbsp;.&nbsp;&nbsp;&nbsp;&nbsp&nbsp;.&nbsp;&nbsp;&nbsp;&nbsp&nbsp;.&nbsp;&nbsp;&nbsp;&nbsp&nbsp;.&nbsp;&nbsp;&nbsp;&nbsp&nbsp;<b>2a</b>&emsp;<input type="text" name="Tax-exempt interest" size="19"required pattern="[0-9]+"class="borderbg"><input type="text" name="Tax-exempt interest" size="3" required pattern="[0-9]+" class="borderbg">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>b</b>&nbsp;&nbsp;Taxable interest &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>2b</b>&emsp;<input type="text" name="Taxable interest" size="19" required pattern="[0-9]+" class="borderbg"><input type="text" name="Taxable interest" size="3" required pattern="[0-9]{2}" class="borderbg"><br>
+                    &nbsp;&nbsp;<b>3a</b>&nbsp;&nbsp;&nbsp;Qualified dividends&nbsp;&nbsp;&nbsp;&nbsp&nbsp;.&nbsp;&nbsp;&nbsp;&nbsp&nbsp;.&nbsp;&nbsp;&nbsp;&nbsp&nbsp;.&nbsp;&nbsp;&nbsp;&nbsp&nbsp;.&nbsp;&nbsp;&nbsp;&nbsp&nbsp;<b>3a</b>&emsp;<input type="text" name="Qualified dividends" size="19"required pattern="[0-9]+"class="borderbg"><input type="text" name="Qualified dividends" size="3" required pattern="[0-9]+" class="borderbg">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>b</b>&nbsp;&nbsp;Ordinary dividends.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>3b</b>&emsp;<input type="text" name="Taxable amount" size="19" required pattern="[0-9]+" class="borderbg"><input type="text" name="Taxable amount" size="3" required pattern="[0-9]{2}" class="borderbg"><br>
+                    &nbsp;&nbsp;<b>4a</b>&nbsp;&nbsp;&nbsp;IRAs, pensions, and annuities&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp&nbsp;.&nbsp;&nbsp;&nbsp;&nbsp&nbsp;<b>4a</b>&emsp;<input type="text" name="IRAs, pensions, and annuities" size="19"required pattern="[0-9]+"class="borderbg"><input type="text" name="IRAs, pensions, and annuities" size="3" required pattern="[0-9]+" class="borderbg">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>b</b>&nbsp;&nbsp;Taxable amount &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>4b</b>&emsp;<input type="text" name="Taxable amount" size="19" required pattern="[0-9]+" class="borderbg"><input type="text" name="Taxable amount" size="3" required pattern="[0-9]{2}" class="borderbg" ><br>
+                    &nbsp;&nbsp;<b>5a</b>&nbsp;&nbsp;&nbsp;Tax-exempt interest&nbsp;&nbsp;&nbsp;&nbsp&nbsp;.&nbsp;&nbsp;&nbsp;&nbsp&nbsp;.&nbsp;&nbsp;&nbsp;&nbsp&nbsp;.&nbsp;&nbsp;&nbsp;&nbsp&nbsp;.&nbsp;&nbsp;&nbsp;&nbsp&nbsp;<b>5a</b>&emsp;<input type="text" name="Tax-exempt interest" size="19"required pattern="[0-9]+"class="borderbg"><input type="text" name="Tax-exempt interest" size="3" required pattern="[0-9]+" class="borderbg">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>b</b>&nbsp;&nbsp;Taxable amount &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>5b</b>&emsp;<input type="text" name="Taxable interest" size="19" required pattern="[0-9]+" class="borderbg"><input type="text" name="Taxable interest" size="3" required pattern="[0-9]{2}" class="borderbg"><br>
+                    
+                    &nbsp;&nbsp;<b>6</b>&nbsp;&nbsp;&nbsp;&nbsp;Total income. Add lines 1 through 5. Add any amount from Schedule 1, line 22 &nbsp;&nbsp;<input type="text" name="Total income" size="12" required pattern="[0-9]+" class="borderbg">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <b>6 </b>&emsp;<input type="text" name="Total income" size="19" required pattern="[0-9]+" class="borderbg"><input type="text" name="Total income" size="3" required pattern="[0-9]{2}" class="borderbg"><br>
+                    &nbsp;&nbsp;<b>7</b>&nbsp;&nbsp;&nbsp;&nbsp;Adjusted gross income. If you have no adjustments to income, enter the amount from line 6; otherwise,<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;subtract  Schedule 1, line 36, from line 6&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>7 </b>&emsp;<input type="text" name="Adjusted gross income" size="19" required pattern="[0-9]+" class="borderbg"><input type="text" name="Adjusted gross income" size="3" required pattern="[0-9]{2}" class="borderbg"><br>
+                    &nbsp;&nbsp;<b>8</b>&nbsp;&nbsp;&nbsp;&nbsp;<b>Standard deduction or itemized deductions</b> (from Schedule A)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <b>8 </b>&emsp;<input type="text" name="Wages, salaries, tips, etc. Attach Form(s) W-2" size="19" required pattern="[0-9]+" class="borderbg"><input type="text" name="Wages, salaries, tips, etc. Attach Form(s) W-2" size="3" required pattern="[0-9]{2}" class="borderbg"><br>
+                    &nbsp;&nbsp;<b>9</b>&nbsp;&nbsp;&nbsp;&nbsp;Qualified business income deduction (see instructions)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <b>9 </b>&emsp;<input type="text" name="Wages, salaries, tips, etc. Attach Form(s) W-2" size="19" required pattern="[0-9]+" class="borderbg"><input type="text" name="Wages, salaries, tips, etc. Attach Form(s) W-2" size="3" required pattern="[0-9]{2}" class="borderbg"><br>
+                    &nbsp;<b>10</b>&nbsp;&nbsp;&nbsp;Taxable income. Subtract lines 8 and 9 from line 7. If zero or less, enter -0- &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <b>10</b>&nbsp;&nbsp;&nbsp;<input type="text" name="Wages, salaries, tips, etc. Attach Form(s) W-2" size="19" required pattern="[0-9]+" class="borderbg"><input type="text" name="Wages, salaries, tips, etc. Attach Form(s) W-2" size="3" required pattern="[0-9]{2}" class="borderbg"><br>
+                    
+                    &nbsp;<b>11</b>&nbsp;&nbsp;&nbsp;<b>a</b> Tax (see inst.) &nbsp;<input type="text" name="Tax" size="4" required pattern="[0-9]+" class="borderbg"> (check if any from: &nbsp;<b>1 </b> <input type="checkbox" name="Form(s) 8814" class="borderbg">Form(s) 8814 &emsp; <b>2 </b> <input type="checkbox" name="Form 4972">Form 4972 &emsp; <b>3 </b> <input type="checkbox"> <input type="text" name="Tax" size="4" class="borderbg">)<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>b Add</b> any amount from Schedule 2 and check here&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;.&nbsp;<b> ▶</b> <input type="checkbox">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>11</b>&emsp;<input type="text" name="Adjusted gross income" size="19" required pattern="[0-9]+" class="borderbg"><input type="text" name="Adjusted gross income" size="3" required pattern="[0-9]{2}" class="borderbg"><br>
+                    &nbsp;<b>12</b>&nbsp;&nbsp;&nbsp;<b>a</b> Child tax credit/credit for other dependents <input type="text" name="Total income" size="12"required pattern="[0-9]+" class="borderbg"> <b>b Add</b> any amount from Schedule 3 and check here &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;.&nbsp;<b> ▶</b> <input type="checkbox">&nbsp;&nbsp;&nbsp;&nbsp;<b>12</b>&emsp;<input type="text" name="Adjusted gross income" size="19" required pattern="[0-9]+" class="borderbg"><input type="text" name="Adjusted gross income" size="3" class="borderbg" required pattern="[0-9]{2}"><br>
+                    &nbsp;<b>13</b>&nbsp;&nbsp;&nbsp;Subtract line 12 from line 11. If zero or less, enter -0-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>13</b>&emsp;<input type="text" name="Wages, salaries, tips, etc. Attach Form(s) W-2" size="19" required pattern="[0-9]+" class="borderbg"><input type="text" class="borderbg" name="Wages, salaries, tips, etc. Attach Form(s) W-2" size="3" required pattern="[0-9]{2}"><br>
+                    &nbsp;<b>14</b>&nbsp;&nbsp;&nbsp;Other taxes. Attach Schedule 4&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>14</b>&emsp;<input type="text" class="borderbg" name="Wages, salaries, tips, etc. Attach Form(s) W-2" size="19" required pattern="[0-9]+"><input type="text" class="borderbg" name="Wages, salaries, tips, etc. Attach Form(s) W-2" size="3" required pattern="[0-9]{2}"><br>
+                    &nbsp;<b>15</b>&nbsp;&nbsp;&nbsp;Total tax. Add lines 13 and 14&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>15</b>&emsp;<input type="text" class="borderbg" name="Wages, salaries, tips, etc. Attach Form(s) W-2" size="19" required pattern="[0-9]+"><input type="text" class="borderbg" name="Wages, salaries, tips, etc. Attach Form(s) W-2" size="3" required pattern="[0-9]{2}"><br>
+                    
+                    &nbsp;<b>16</b>&nbsp;&nbsp;&nbsp;Federal income tax withheld from Forms W-2 and 1099&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>16</b>&emsp;<input type="text" name="Wages, salaries, tips, etc. Attach Form(s) W-2" size="19" required pattern="[0-9]+" class="borderbg"><input type="text" name="Wages, salaries, tips, etc. Attach Form(s) W-2" size="3" required pattern="[0-9]{2}" class="borderbg"><br>
+                    &nbsp;<b>17</b>&nbsp;&nbsp;&nbsp;Refundable credits: <b>a</b> EIC (see inst.)&emsp;<input type="text" name="Refundable credits" size="9"required pattern="[0-9]+" class="borderbg"> &emsp;<b>b</b> Sch. 8812 &emsp;<input type="text" class="borderbg" name="Refundable credits" size="9"required pattern="[0-9]+"> &emsp;<b>c</b> Form 8863&emsp;<input type="text" class="borderbg" name="Refundable credits" size="9"required pattern="[0-9]+"><br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>Add</b> any amount from Schedule 5 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="text" class="borderbg" name="Refundable credits:" size="9"required pattern="[0-9]+">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;.&nbsp;&nbsp;&nbsp;.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>17</b>&emsp;<input type="text" class="borderbg" name="Adjusted gross income" size="19" required pattern="[0-9]+"><input type="text" class="borderbg" name="Adjusted gross income" size="3" required pattern="[0-9]{2}"><br>
+                    &nbsp;<b>18</b>&nbsp;&nbsp;&nbsp;Add lines 16 and 17. These are your total payments&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>18</b>&emsp;<input type="text" name="Wages, salaries, tips, etc. Attach Form(s) W-2" size="19" class="borderbg" required pattern="[0-9]+"><input type="text" class="borderbg" name="Wages, salaries, tips, etc. Attach Form(s) W-2" size="3" required pattern="[0-9]{2}" ><br>
+                    &nbsp;<b>19</b>&nbsp;&nbsp;&nbsp;If line 18 is more than line 15, subtract line 15 from line 18. This is the amount you <b>overpaid</b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>19</b>&emsp;<input type="text" name="Wages, salaries, tips, etc. Attach Form(s) W-2" size="19" required pattern="[0-9]+" class="borderbg"><input type="text" name="Wages, salaries, tips, etc. Attach Form(s) W-2" size="3" required pattern="[0-9]{2}" class="borderbg"><br>
+                    
+                    &nbsp;<b>20a</b>&nbsp;&nbsp;Amount of line 19 you want <b>refunded to you.</b> If Form 8888 is attached, check here  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;.&nbsp;&nbsp;&nbsp;<b> ▶</b> <input type="checkbox">&nbsp;&nbsp;&nbsp;<b>20a</b>&nbsp;&nbsp;&nbsp;<input type="text" class="borderbg" name="Adjusted gross income" size="19" required pattern="[0-9]+"><input type="text" class="borderbg" name="Adjusted gross income" size="3" required pattern="[0-9]{2}"><br>
+                    &nbsp;▶ <b>b</b>&nbsp;Routing number&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input class="boxbg" type="text" name="Routing number" minlenght="1" maxlength="1" required pattern="[0-9]{1}"><input class="boxbg" type="text" name="Routing number" minlenght="1" maxlength="1" required pattern="[0-9]{1}"><input class="boxbg" type="text" name="Routing number" minlenght="1" maxlength="1" required pattern="[0-9]{1}"><input class="boxbg" type="text" name="Routing number" minlenght="1" maxlength="1" required pattern="[0-9]{1}"><input class="boxbg" type="text" name="Routing number" minlenght="1" maxlength="1" required pattern="[0-9]{1}"><input class="boxbg" type="text" name="Routing number" minlenght="1" maxlength="1" required pattern="[0-9]{1}"><input class="boxbg" type="text" name="Routing number" minlenght="1" maxlength="1" required pattern="[0-9]{1}"><input class="boxbg" type="text" name="Routing number" minlenght="1" maxlength="1" required pattern="[0-9]{1}"><input class="boxbg" type="text" name="Routing number" minlenght="1" maxlength="1" required pattern="[0-9]{1}"> &emsp;▶ <b>c</b> Type: &emsp; <input type="checkbox" name="Type">Checking &emsp;<input type="checkbox" name="Type">Savings<br>
+                    &nbsp;▶ <b>d</b>&nbsp;Account number&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input class="boxbg" type="text" name="Account number" minlenght="1" maxlength="1" required pattern="[0-9]{1}"><input class="boxbg" type="text" name="Account number" minlenght="1" maxlength="1" required pattern="[0-9]{1}"><input class="boxbg" type="text" name="Account number" minlenght="1" maxlength="1" required pattern="[0-9]{1}"><input class="boxbg" type="text" name="Account number" minlenght="1" maxlength="1" required pattern="[0-9]{1}"><input class="boxbg" type="text" name="Account number" minlenght="1" maxlength="1" required pattern="[0-9]{1}"><input class="boxbg" type="text" name="Account number" minlenght="1" maxlength="1" required pattern="[0-9]{1}"><input class="boxbg" type="text" name="Account number" minlenght="1" maxlength="1" required pattern="[0-9]{1}"><input class="boxbg" type="text" name="Account number" minlenght="1" maxlength="1" required pattern="[0-9]{1}"><input class="boxbg" type="text" name="Account number" minlenght="1" maxlength="1" required pattern="[0-9]{1}"><input class="boxbg" type="text" name="Account number" minlenght="1" maxlength="1" required pattern="[0-9]{1}"><input class="boxbg" type="text" name="Account number" minlenght="1" maxlength="1" required pattern="[0-9]{1}"><input class="boxbg" type="text" name="Account number" minlenght="1" maxlength="1" required pattern="[0-9]{1}"><input class="boxbg" type="text" name="Account number" minlenght="1" maxlength="1" required pattern="[0-9]{1}"><input class="boxbg" type="text" name="Account number" minlenght="1" maxlength="1" required pattern="[0-9]{1}"><input class="boxbg" type="text" name="Account number" minlenght="1" maxlength="1" required pattern="[0-9]{1}"><input class="boxbg" type="text" name="Account number" minlenght="1" maxlength="1" required pattern="[0-9]{1}"><input class="boxbg" type="text" name="Account number" minlenght="1" maxlength="1" required pattern="[0-9]{1}"><br>
+                    
+                    &nbsp;<b>21</b>&nbsp;&nbsp;&nbsp;Amount of line 19 you want applied to your 2019 estimated tax &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;.&nbsp;&nbsp;&nbsp;&nbsp;<b>▶</b>&emsp;<b>21</b>&nbsp;&nbsp;&nbsp; <input type="text" name="Tax" size="19"required pattern="[0-9]+" class="borderbg"><input type="text" name="Tax" size="3"required pattern="[0-9]{2}" class="borderbg"><br>
+                    &nbsp;<b>22</b>&nbsp;&nbsp;&nbsp;<b>Amount You Owe.</b> Subtract line 18 from line 15. For details on how to pay, see instructions&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;▶&nbsp;&nbsp;&nbsp;<b>22</b>&emsp;<input type="text" class="borderbg" name="Wages, salaries, tips, etc. Attach Form(s) W-2" size="19" required pattern="[0-9]+"><input type="text" class="borderbg" name="Wages, salaries, tips, etc. Attach Form(s) W-2" size="3" required pattern="[0-9]{2}"><br>
+                    &nbsp;<b>23</b>&nbsp;&nbsp;&nbsp;Estimated tax penalty (see instructions)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>▶</b>&emsp;<b>23</b>&nbsp;&nbsp;&nbsp; <input type="text" class="borderbg" name="Tax" size="19"required pattern="[0-9]+"><input type="text" class="borderbg" name="Tax" size="3"required pattern="[0-9]{2}"><br>
+            </span>
+
+            <!--inserting horizontal and vertical lines-->
+            <span class="p2hr2"></span>
+            <span class="p2hr3"></span>
+            <span class="p2hr4"></span>
+            
+            <span class="mainvl1"></span>
+            <span class="mainvl2"></span>
+            <span class="mainvl3"></span>
+            
+            <span class="sidevl1"></span>
+            <span class="sidevl2"></span>
+            <span class="sidevl3"></span>
+            <span class="sidevl4"></span>
+
+            <span class="sidehr1"></span>
+            <span class="sidehr2"></span>
+            <span class="sidehr3"></span>
+            <span class="sidehr4"></span>
+
+            <span class="mh1" ></span>
+            <span class="mh2" ></span>
+            <span class="mh3" ></span>
+            <span class="mh4" ></span>
+            <span class="mh5" ></span>
+            <span class="mainh6" ></span>
+            <span class="mainh7" ></span>
+            <span class="mainh8" ></span>
+            <span class="mainh9" ></span>
+            <span class="mainh10" ></span>
+            <span class="mh11" ></span>
+            <span class="mh12" ></span>
+            <span class="mh13" ></span>
+            <span class="mh14" ></span>
+            <span class="mh15" ></span>
+            <span class="mh16" ></span>
+            <span class="mh17" ></span>
+            <span class="mh18" ></span>
+            <span class="mh19" ></span>
+            <span class="mh20" ></span>
+
+            <span class="p2lastline">
+
+            Go to <i><a href="www.irs.gov/Form1040">www.irs.gov/Form1040</a></i> for instructions and the latest information. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp&nbsp;&nbsp;&nbsp;&nbsp;&nbsp&nbsp;&nbsp;&nbsp;&nbsp;&nbsp&nbsp;&nbsp;&nbsp;&nbsp;&nbsp&nbsp;&nbsp;&nbsp;&nbsp;&nbsp&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp&nbsp;&nbsp;&nbsp;&nbsp;&nbsp&nbsp;&nbsp;&nbsp;&nbsp;&nbsp&nbsp;&nbsp;&nbsp;&nbsp;&nbsp&nbsp;&nbsp;&nbsp;&nbsp;&nbsp&nbsp;&nbsp;&nbsp;&nbsp;&nbsp&nbsp;&nbsp;&nbsp;&nbsp;&nbsp&nbsp;&nbsp;&nbsp;&nbsp;&nbsp&nbsp;&nbsp;&nbsp;&nbsp;&nbsp&nbsp;&nbsp;&nbsp;&nbsp;&nbsp&nbsp;&nbsp;&nbsp;&nbsp;&nbsp&nbsp;&nbsp;&nbsp;&nbsp;&nbsp&nbsp;&nbsp;&nbsp;&nbsp;&nbsp&nbsp;&nbsp;&nbsp;&nbsp;&nbsp&nbsp;&nbsp;&nbsp;&nbsp;&nbsp&nbsp;&nbsp;&nbsp;&nbsp;&nbsp&nbsp;&nbsp;&nbsp;&nbsp;&nbsp&nbsp;&nbsp;&nbsp;&nbsp;&nbsp&nbsp;&nbsp;&nbsp;&nbsp;&nbsp&nbsp;&nbsp;&nbsp;&nbsp;&nbsp&nbsp;&nbsp;&nbsp;&nbsp;&nbsp&nbsp;&nbsp;&nbsp;&nbsp;&nbsp&nbsp;&nbsp;&nbsp;&nbsp;&nbsp&nbsp;&nbsp;&nbsp;&nbsp;&nbsp&nbsp;&nbsp;&nbsp;&nbsp;&nbsp&nbsp;&nbsp;&nbsp;&nbsp;&nbsp&nbsp;&nbsp;&nbsp;&nbsp;&nbsp&nbsp;&nbsp;&nbsp;&nbsp;&nbsp&nbsp;&nbsp;&nbsp;&nbsp;&nbsp&nbsp;&nbsp;&nbsp;&nbsp;&nbsp&nbsp;&nbsp;&nbsp;&nbsp;&nbsp&nbsp;&nbsp;&nbsp;&nbsp;&nbsp&nbsp;&nbsp;&nbsp;Form <span class="bold2"><b>1040</b></span> (2018)<br>
+            </span>         
+            <!--    1. href attribute specifies the link's destination:
+                    2. <i> is used to make the text italic.
+                    3. creating a link to www.irs.gov/Form1040
+            -->
+
+            <br>
+            <center><button type="submit" form="nameform" id="nameform" value="Submit">Submit</button></center> <!--Adding a button called Submit using <button> tag and aligning it to the center using center alignment-->
+
+        </form>
+    </body>
+</html>

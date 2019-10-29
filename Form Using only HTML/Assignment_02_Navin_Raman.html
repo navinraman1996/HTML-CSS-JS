@@ -1,0 +1,249 @@
+<!DOCTYPE HTML> <!--it is a declaration to instruct the web browser about the version of the HTML-->
+<html>  <!--html tag tells the browser that this is an HTML document-->
+    <head>  <!--head tag is a metatag which is a data about data of the document-->
+        <title>Assignmet_2_NAVIN_RAMAN</title> <!-- Title tag used to declare the title or name of the HTML document -->
+    </head>
+    
+    <body> <!--body tag contains all the contents of the document-->
+
+        <span style="padding-left:137px;"></span><span style="font-size: 10pt;"></span>Department of the Treasury—Internal Revenue Service<span style="padding-left:50px;"></span>(99)<br>
+        Form <span style="font-size: 30pt;"><b>1040</b></span>&emsp;<span style="font-size: 18pt;"><b>U.S. Individual Income Tax Return</b></span>&emsp;<span style="font-size: 25pt;"><b>2018 </b></span>&emsp;<span style="font-size: 12pt;">OMB No. 1545-0074</span>&emsp;<span style="font-size: 12pt;">IRS Use Only—Do not write or staple in this space.</span>
+        <hr>
+
+        <!--Here span tag is used for grouping the titles of the form and also used to diferentiatethem by setting different font sizes
+                1. span style="padding-left/right is used to set the thickness values of the padding area
+                2. span stye="font-size is used to set the desired height of glyphs from the font
+                3. &nbsp; is a non-breaking space which is used to create a space in a line
+                4. &emsp; is an emphasized space. (wider than normal space)
+                5. <p> tag specifies a paragraph of text. It is a block-level element.
+                6. <b> tag is used for bolding purpose .
+                7. <br> tag is empty tag and which is used to insert a sinlge line break
+            -->
+
+        <form action="/action_page.php" method="POST" id="nameform"> <!--action attribute is used to inform the browser what page (or script) to call once the "submit" button is pressed-->
+         
+            Filing status: &nbsp;&nbsp;
+            <input type="checkbox" name="Filing" value="Single"> Single &nbsp;&nbsp;
+            <input type="checkbox" name="Filing" value="Married filing jointly"> Married filing jointly &nbsp;
+            <input type="checkbox" name="Filing" value="Married filing seperately"> Married filing seperately &nbsp;
+            <input type="checkbox" name="Filing" value="Head of household"> Head of household &nbsp;
+            <input type="checkbox" name="Filing" value="Qualifying widow(er)"> Qualifying widow(er)
+            &nbsp;<input type="text" name="Filing" size="23">
+        
+            <hr>
+            <!--    1. <form> tag is used to create a form for the user input, which is used to pass the user data to a specified URL.
+                    2. <input> is the input field where the user can enter data, The <input> element is the most important form element.
+                    3. <input> can be displayed n several ways, depending on the "type" attribute.
+                          <input type="checkbox"> is used to provide the user with a checkbox entry.
+                    4. The value attribute specifies the value of an <input> element.
+                    5. The size attribute specifies the visible width of an <input> element.
+                    6. <hr> is a horizontal line. -->
+        
+            Your first name and initial 
+            <span style="padding-left:200px"></span> Last name &nbsp; <span style="padding-left:425px"></span>Your social security number<br>
+            <input type="text" name="Your first name and initial" size="52" required pattern="[A-za-z]+">
+            <input type="text" name="Last name"size="73" required pattern="[A-za-z]+">&nbsp;
+            <input type="text" name="Your social security number" minlenght="3" maxlength="3" size="3" required pattern="[0-9]{3}"><input type="text" name="Your social security number" minlenght="2" maxlength="2" size="2" required pattern="[0-9]{2}"><input type="text" name="Your social security number" minlenght="4" maxlength="4" size="8" required pattern="[0-9]{4}">
+            <hr>
+        
+            <!--   1. minlenght attribute specifies the minimum no. of characters allowed in the <input> element
+                   2. maxlength attribute specifies the maximum number of characters allowed in the <input> element.
+                   3. required attribute is a boolean attribute, it specifies that an input field must be filled out before submitting the form.
+                   4. pattern attribute specifies a regular expression that the <input> element's value is checked against on form submission, here it is checking whether the user is entering a number for ssn block rather than text or symbols.
+                        pattern="[0-9]{2}", which allows two digit number input, pattern="[0-9]{3}", which allows three digit number input, pattern="[0-9]{4}", which allows four digit number input  
+                        pattern="[A-za-z]+", which allows n no. of characters of alphabets, both capital and normal -->
+        
+            Your standard deduction: &nbsp;&nbsp;
+            <input type="checkbox" name="Your standard deduction" value="Someone can claim you as a dependent"> Someone can claim you as a dependent &nbsp;&nbsp;
+            <input type="checkbox" name="Your standard deduction" value="You were born before January 2, 1954"> You were born before January 2, 1954 &nbsp;&nbsp;&nbsp;&nbsp;
+            <input type="checkbox" name="Your standard deduction" value="You are blind"> You are blind
+            <hr>
+        
+            If joint return, spouse's first name and initial <span style="padding-left:85px"></span>Last name <span style="padding-left:430px"></span>Spouse’s social security number<br>
+
+            <input type="text" name="Spouse’s first name and initial" size="52" required pattern="[A-za-z]+">
+            <input type="text" name="Last name"size="73" required pattern="[A-za-z]+">&nbsp;
+            <input type="text" name="Your social security number" maxlength="3" size="3" required pattern="[0-9]{3}"><input type="text" name="Your social security number" maxlength="2" size="2" required pattern="[0-9]{2}"><input type="text" name="Your social security number" maxlength="4" size="8" required pattern="[0-9]{4}">
+            <hr>
+        
+            Spouse standard deduction:
+            <input type="checkbox" name="Spouse standard deduction:" value="Someone can claim your spouse as a dependent"> Someone can claim your spouse as a dependent &nbsp;&nbsp;
+            <input type="checkbox" name="Spouse standard deduction:" value="Spouse were born before January 2, 1954"> Spouse were born before January 2, 1954 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp; 
+            <input type="checkbox" name="Full-year health care coverage or exempt (see inst.)" value="Full-year health care coverage or exempt (see inst.)">Full-year health care coverage<br>
+            <input type="checkbox" name="Spouse standard deduction:" value="Spouse is blind"> Spouse is blind &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;
+            <input type="checkbox" name="Spouse standard deduction:" value="Spouse itemizes on a separate return or you were dual-status alien">
+            Spouse itemizes on a separate return or you were dual-status alien <span style="padding-left:250px"></span>or exempt (see inst.)  
+            <hr>
+        
+            Home address (number and street). If you have a P.O. box, see instructions. <span style="padding-left:295px;"></span> Apt. no. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Presidential Election Campaign
+        
+            <input type="text" name="Home address"size="114" required>
+            <input type="text" name="Apt. no."size="10" required pattern="[0-9]{4}">&nbsp;&nbsp;(see inst.)&nbsp;&nbsp;&nbsp;<input type="checkbox" name="Presidential Election Campaign" value="Presidential Election Campaign"> You &nbsp;&nbsp;<input type="checkbox" name="Presidential Election Campaign" value="Presidential Election Campaign"> Spouse
+            <hr>
+        
+            City, town or post office, state, and ZIP code. If you have a foreign address, attach Schedule 6. <span style="padding-left:265px;"></span>If more than four dependents,
+
+            <input type="text" name="City, town or post office, state, and ZIP code"size="130" required pattern="[A-Z][A-Za-z' -]+" >&nbsp;&nbsp;see inst. and &#10004; here ▶
+            <input type="checkbox" name="If more than four dependents" value="If more than four dependents"> 
+            <hr>
+        
+            <!--    pattern="[A-Z][A-Za-z' -]+", is used to specify that the user input must contain a capital alphabet followed by small or capital letter and can contain ' and -, here it is used for the "city, town" user entry.
+            -->
+            <style>
+                table, th, td {
+                border: 1px solid grey;
+                border-collapse: collapse;
+            }
+            </style>
+        
+            <!--    1. table tag is used to define a HTML table    
+                    2. <th> element is used to define a table header
+                    3. <td> element is used to define a table cell
+                    4. <tr> element is used to define a table row
+                    5. border is a CSS property which is used to provide border for the table
+                    6. border-collapse is used to collapse a border into another border
+                -->
+
+            <table style="width:29cm"> <!--fixing the width of the table to 29cm-->
+                <tr> <!--First row-->
+                    <td style="width:11cm"><b>Dependents</b> (see instructions):<span style="padding-right:200px;"></span> <b>(1)</b> First name<span style="padding-left:175px;"></span>Last name</td> <!--Fixing a width size of 11cm to the first cell in the first row-->
+                    <td style="width:5cm"><b>(2)</b> Social security number</td> <!--Fixing a width size of 5cm to the second cell in the first row-->
+                    <td style="width:4cm"> <!--Fixing a width size of 4cm to the third cell in the first row-->
+                        <label for="t1"> <b>(3)</b>Relationship to you </label> <!--<label> tag is used to create labels for items in a user interface-->
+                        <datalist id="l1"> <!--The Datalist element is used to suggest input values to the user, thereby providing an "autocomplete" feature on form elements-->
+                            <option>Mother</option> <!--<option> element is used to define an item contained in a <select> , an <optgroup> , or a <datalist> element-->
+                            <option>Father</option>
+                            <option>Brother</option>
+                            <option>Sister</option>
+                            <option>Husband</option>
+                            <option>Wife</option>
+                            <option>Son</option>
+                            <option>Daughter</option>
+                            <option>Grandmother</option>
+                            <option>Grandfather</option>
+                        </datalist>
+                    </td>
+                    <td><span style="padding-left:60px;"></span> <b>(4)</b> &#10004; if qualifies for (see inst.):<span style="padding-left:35px;"></span>
+                        <span style="padding-left:15px;"></span>Child tax credit<span style="padding-left:10px;"></span>Credit for other dependents
+                    </td>
+                </tr>       
+                <tr> <!--Second row-->
+                    <td><input type="text" name="First name" size="25" required pattern="[A-Za-z]+"><input type="text" name="Last name" size="24" required pattern="[A-Za-z]+"></td>
+                    <td><input type="text" name="Social security number" minlenght="3" maxlength="3" size="3" required pattern="[0-9]{3}"><input type="text" name="Social security number" minlenght="2" maxlength="2" size="2" required pattern="[0-9]{2}"><input type="text" name="Social security number" minlenght="4" maxlength="4" size="7" required pattern="[0-9]{4}"></td>
+                    <td><input type="text" id="t1" name="Relationship to you" list="l1" required
+                        pattern="[Mm]other|[Ff]ather|[Bb]rother|[Ss]ister|[Hh]usband|[Ww]ife|[Ss]on|[Dd]aughter|[Gg]randmother|[Gg]randfather"> <!--Here the pattern default input fields which is in datalist are idicated which is used to get these options quicker by typing the first letter of the option-->
+                    </td>
+                    <td><t<span style="padding-left:60px;"></span><input type="checkbox" name="Child tax credit"><span style="padding-left:120px;"></span><input type="checkbox" name="Child tax credit"></td>
+                </tr>
+                <tr> <!--Third row-->
+                    <td><input type="text" name="First name" size="25" required pattern="[A-Za-z]+"><input type="text" name="Last name" size="24" required pattern="[A-Za-z]+"></td>
+                    <td><input type="text" name="Social security number" minlenght="3" maxlength="3" size="3" required pattern="[0-9]{3}" ><input type="text" name="Social security number" minlenght="2" maxlength="2" size="2" required pattern="[0-9]{2}"><input type="text" name="Social security number" minlenght="4" maxlength="4" size="7" required pattern="[0-9]{4}"></td>
+                    <td><input type="text" id="t1" name="Relationship to you" list="l1" required
+                        pattern="[Mm]other|[Ff]ather|[Bb]rother|[Ss]ister|[Hh]usband|[Ww]ife|[Ss]on|[Dd]aughter|[Gg]randmother|[Gg]randfather">
+                    </td>
+                    <td><span style="padding-left:60px;"></span><input type="checkbox" name="Child tax credit"><span style="padding-left:120px;"></span><input type="checkbox" name="Child tax credit"></td>
+                </tr>
+                <tr> <!--Fourth row-->
+                    <td><input type="text" name="First name" size="25" required pattern="[A-Za-z]+"><input type="text" name="Last name" size="24" required pattern="[A-Za-z]+"></td>
+                    <td><input type="text" name="Social security number" minlenght="3" maxlength="3" size="3" required pattern="[0-9]{3}"><input type="text" name="Social security number" minlenght="2" maxlength="2" size="2" required pattern="[0-9]{2}"><input type="text" name="Social security number" minlenght="4" maxlength="4" size="7" required pattern="[0-9]{4}"></td>
+                    <td><input type="text" id="t1" name="Relationship to you" list="l1" required
+                        pattern="[Mm]other|[Ff]ather|[Bb]rother|[Ss]ister|[Hh]usband|[Ww]ife|[Ss]on|[Dd]aughter|[Gg]randmother|[Gg]randfather">
+                    </td>
+                    <td><span style="padding-left:60px;"></span><input type="checkbox" name="Child tax credit"><span style="padding-left:120px;"></span><input type="checkbox" name="Child tax credit"></td>
+                </tr>
+                <tr> <!--Fifth row-->
+                    <td><input type="text" name="First name" size="25" required pattern="[A-Za-z]+"><input type="text" name="Last name" size="24" required pattern="[A-Za-z]+"></td>
+                    <td><input type="text" name="Social security number" minlenght="3" maxlength="3" size="3" required pattern="[0-9]{3}"><input type="text" name="Social security number" minlenght="2" maxlength="2" size="2" required pattern="[0-9]{2}"><input type="text" name="Social security number" minlenght="4" maxlength="4" size="7" required pattern="[0-9]{4}"></td>
+                    <td><input type="text" id="t1" name="Relationship to you" list="l1" required
+                        pattern="[Mm]other|[Ff]ather|[Bb]rother|[Ss]ister|[Hh]usband|[Ww]ife|[Ss]on|[Dd]aughter|[Gg]randmother|[Gg]randfather">
+                    </td>
+                    <td><span style="padding-left:60px;"></span><input type="checkbox" name="Child tax credit"><span style="padding-left:120px;"></span><input type="checkbox" name="Child tax credit"></td>
+                </tr>
+            </table>
+
+            <p style="font-size:12px">Under penalties of perjury, I declare that I have examined this return and accompanying schedules and statements, and to the best of my knowledge and belief, they are true, correct, and complete. Declaration of preparer (other </p>
+            <p style="font-size:12px">than taxpayer) is based on all information of which preparer has any knowledge.</p> 
+            <hr>
+  
+            Your signature<span style="padding-left:360px;"></span>Date<span style="padding-left:120px;"></span>Your occupation<span style="padding-left:90px;"></span>If the IRS sent you an Identity Protection PIN,<br>
+
+            <input type="text" name="Your signature" size="65" required pattern="[A-Za-z]+"><input type="date" name="Date" required><input type="text" name="Your occupation" size="27" required pattern="[A-Za-z]+">enter it here (see inst.) &nbsp; &nbsp; &nbsp; &nbsp;<input style="width:1rem;" type="text" name="Identity Protection PIN" minlenght="1" maxlength="1" required pattern="[0-9]{1}"><input style="width:1rem;" type="text" name="Identity Protection PIN" minlenght="1" maxlength="1" required pattern="[0-9]{1}"><input style="width:1rem;" type="text" name="Identity Protection PIN" minlenght="1" maxlength="1" required pattern="[0-9]{1}"><input style="width:1rem;" type="text" name="Identity Protection PIN" minlenght="1" maxlength="1" required pattern="[0-9]{1}"><input style="width:1rem;" type="text" name="Identity Protection PIN" minlenght="1" maxlength="1" required pattern="[0-9]{1}"><input style="width:1rem;" type="text" name="Identity Protection PIN" minlenght="1" maxlength="1"required pattern="[0-9]{1}"><br>
+        
+            Spouse’s signature. If a joint return, <b>both</b> must sign.<span style="padding-left:123px;"></span>Date<span style="padding-left:120px;"></span>Spouse’s occupation<span style="padding-left:64px;"></span>If the IRS sent you an Identity Protection PIN,<br>
+
+            <input type="text" name="Spouse’s signature" size="65" required pattern="[A-Za-z]+"><input type="date" name="Date" required><input type="text" name="Spouse’s occupation" size="27" required pattern="[A-Za-z]+">enter it here (see inst.) &nbsp; &nbsp; &nbsp; &nbsp;<input style="width:1rem;" type="text" name="Identity Protection PIN" minlenght="1" maxlength="1" required pattern="[0-9]{1}"><input style="width:1rem;" type="text" name="Identity Protection PIN" minlenght="1" maxlength="1" required pattern="[0-9]{1}"><input style="width:1rem;" type="text" name="Identity Protection PIN" minlenght="1" maxlength="1" required pattern="[0-9]{1}"><input style="width:1rem;" type="text" name="Identity Protection PIN" minlenght="1" maxlength="1" required pattern="[0-9]{1}"><input style="width:1rem;" type="text" name="Identity Protection PIN" minlenght="1" maxlength="1" required pattern="[0-9]{1}"><input style="width:1rem;" type="text" name="Identity Protection PIN" minlenght="1" maxlength="1"required pattern="[0-9]{1}"><br>
+        
+            <b>Sign Here &#94;</b> Joint return? See instructions. Keep a copy for your records.
+            <hr>  
+
+        
+            <fieldset style="width:1070px;"> <!--<fieldset> tag is used to layout and organise a large portion in a form, which is here used to create a box and setting the width of the fieldset box to 1070px-->
+                <legend>
+                    <b>Paid Preparer Use Only:</b>
+                </legend> <!--<legend> tag defines a caption for the <fieldset> element.-->
+                    Preparer’s name<span style="padding-left:135px;"></span>Preparer’s signature<span style="padding-left:320px;"></span>PTIN<span style="padding-left:70px;"></span>Firm’s EIN<span style="padding-left:50px;"></span>Check if:
+                
+                    <input type="text" name="Preparer’s name" size="29" required pattern="[A-Za-z]+"><input type="text" name="Preparer’s signature" size="60" required pattern="[A-Za-z]+"><input type="text" name="PTIN" size="10" required pattern="[0-9]{9}"><input type="text" name="Firm’s EIN" size="10" required required pattern="[0-9]{9}"><span style="padding-left:20px;"></span><input type="checkbox" name="3rd Party Designee">&nbsp; 3rd Party Designee
+                
+                    Firm’s name ▶<input type="text" name="Firm’s name" size="80" required pattern="[A-Za-z]+">Phone no. &nbsp;<input type="tel" name="Phone no." size="14" required pattern="[0-9]{3}[ -][0-9]{3}[ -][0-9]{4}"><span style="padding-left:20px;"></span><input type="checkbox" name="3rd Party Designee">&nbsp; Self-employed
+                    Firm’s address ▶<input type="text" name="Firm’s address" size="132" required>
+                  
+            </fieldset>
+       
+            <hr>
+
+            <b>For Disclosure, Privacy Act, and Paperwork Reduction Act Notice, see separate instructions.</b><span style="padding-left:135px;"></span>Cat. No. 11320B<span style="padding-left:105px;"></span>Form 1040 (2018)
+            <hr>
+                <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br> <!--NEXT PAGE-->
+            <hr>
+
+            Form 1040 (2018)<span style="padding-left:1111px;"></span>Page<b>2</b>  
+            <hr>
+
+            <span style="padding-left:170px;"></span><b>1</b> &nbsp; &nbsp; Wages, salaries, tips, etc. Attach Form(s) W-2 &emsp; . &emsp; . &emsp; . &emsp; . &emsp; . &emsp; . &emsp; . &emsp; . &emsp; . &emsp; . &emsp; . &emsp; . &emsp; . &emsp; . &emsp; . &emsp; . &emsp; . &emsp; . &emsp; . &emsp; . &emsp; <b>1 </b>&emsp;<input type="text" name="Wages, salaries, tips, etc. Attach Form(s) W-2" size="13" required pattern="[0-9]+"><input type="text" name="Wages, salaries, tips, etc. Attach Form(s) W-2" size="2" required pattern="[0-9]{2}"><br>
+            Attach Form(s)<span style="padding-left:70px;"></span><b>2a</b> &nbsp; Tax-exempt interest . &emsp; . &emsp; . &emsp; <b>2a</b>&emsp;<input type="text" name="Tax-exempt interest" size="26"required pattern="[0-9]+"><input type="text" name="Tax-exempt interest" size="3" required pattern="[0-9]+"> &emsp; <b>b</b> &nbsp; Taxable interest &emsp;. &emsp;.&emsp;.&emsp;. &emsp; . &emsp; . &emsp; . &emsp;.&emsp;<b>2b</b>&emsp;<input type="text" name="Taxable interest" size="13" required pattern="[0-9]+"><input type="text" name="Taxable interest" size="2" required pattern="[0-9]{2}"><br>
+            W-2. Also attach<span style="padding-left:59px;"></span><b>3a</b> &nbsp; Qualified dividends . &emsp; . &emsp; . &emsp; <b>3a</b>&emsp;<input type="text" name="Qualified dividends" size="26"required pattern="[0-9]+"><input type="text" name="Qualified dividends" size="3" required pattern="[0-9]+"> &emsp; <b>b</b> &nbsp; Qualified dividends &emsp; . &emsp; . &emsp; . &emsp;.&emsp;&emsp;.&emsp;. &emsp; <b>3b</b>&emsp;<input type="text" name="Qualified dividends" size="13" required pattern="[0-9]+"><input type="text" name="Qualified dividends" size="2" required pattern="[0-9]{2}"><br>
+            Form(s) W-2G and<span style="padding-left:47px;"></span><b>4a</b> &nbsp; IRAs, pensions, and annuities.&emsp;&nbsp;<b>4a</b>&emsp;<input type="text" name=" IRAs, pensions, and annuities" size="26"required pattern="[0-9]+"><input type="text" name=" IRAs, pensions, and annuities" size="3" required pattern="[0-9]+"> &emsp; <b>b</b> &nbsp; Taxable amount &emsp; . &emsp; . &emsp; . &emsp; .&emsp; . &emsp; .&emsp; . &emsp; <b>4b</b>&emsp;<input type="text" name="Taxable amount" size="13" required pattern="[0-9]+"><input type="text" name="IRAs, pensions, and annuities." size="2" required pattern="[0-9]{2}"><br>
+            1099-R if tax was<span style="padding-left:54px;"></span><b>5a</b> &nbsp; Social security benefits. &emsp; . &emsp; . &nbsp;<b>5a</b>&emsp;<input type="text" name=" Social security benefits" size="26"required pattern="[0-9]+"><input type="text" name=" Social security benefits" size="3" required pattern="[0-9]+"> &emsp; <b>b</b> &nbsp; Taxable amount &emsp; . &emsp; . &emsp; .&emsp; .&emsp; .&emsp;&emsp; .&emsp;.&emsp;<b>5b</b>&emsp;<input type="text" name="Taxable amount" size="13" required pattern="[0-9]+"><input type="text" name="Taxable amount" size="2" required pattern="[0-9]{2}"><br>
+            withheld.<span style="padding-left:109px;"></span><b>6</b>  &nbsp; &nbsp; Total income. Add lines 1 through 5. Add any amount from Schedule 1, line 22 <input type="text" name="Total income" size="12" required pattern="[0-9]+" >  &emsp; . &emsp; . &emsp; . &emsp; . &emsp; . &emsp; . &emsp; .&nbsp;&emsp; . &emsp;<b> 6</b>&emsp;&nbsp;<input type="text" name="Total income" size="13" required pattern="[0-9]+"><input type="text" name="Total income" size="2" required pattern="[0-9]{2}"><br>
+
+            <span style="padding-left:170px;"></span><b>7</b> &nbsp; &nbsp; Adjusted gross income. If you have no adjustments to income, enter the amount from line 6; otherwise, subtract Schedule 1, . &emsp; . &emsp; . &emsp;<b>7 </b>&emsp;<input type="text" name="Adjusted gross income" size="13" required pattern="[0-9]+"><input type="text" name="Adjusted gross income" size="2" required pattern="[0-9]{2}"><br>
+            <b>Standard</b><span style="padding-left:130px;"></span>&nbsp;line 36, from line 6&emsp;.&emsp; . &emsp; . &emsp; . &emsp; . &emsp; . &emsp; . &emsp; . &emsp; . &emsp; . &emsp; . &emsp; . &emsp; . &emsp; . &emsp; . &emsp; &emsp; . &emsp; . &emsp; . &emsp; . &emsp; . &emsp; . &emsp; . &emsp; . &emsp; . &emsp; . &emsp; . &emsp; . &emsp; . &emsp; . &emsp; . &emsp;&emsp; . &emsp; . &emsp; . &emsp; <br>
+            <b>Deduction for—</b><span style="padding-left:60px;"></span><b>8</b> &nbsp; &nbsp; <b>Standard deduction or itemized deductions</b> (from Schedule A) &emsp; . &emsp; &nbsp;.&emsp; .&emsp; . &emsp; . &emsp; . &emsp; . &emsp; . &emsp; . &emsp; . &emsp; . &emsp; . &emsp; . &emsp; . &emsp; . &emsp; . &emsp;<b>8</b>&emsp;<input type="text" name="Standard deduction or itemized deductions" size="13" required pattern="[0-9]+"><input type="text" name="Standard deduction or itemized deductions" size="2" required pattern="[0-9]{2}"><br>
+    
+            &bull; Single or married <span style="padding-left:45px;"></span><b>9</b> &nbsp; &nbsp; Qualified business income deduction (see instructions) &emsp; . &emsp; &nbsp;. &emsp; . &emsp; . &emsp; . &emsp; . &emsp; . &emsp; . &emsp;.&emsp; . &emsp;.&emsp; . &emsp; . &emsp; . &emsp; . &emsp;.&emsp; . &emsp; . &emsp; .&emsp;<b> 9 </b>&emsp;<input type="text" name="Qualified business income deduction" size="13"required pattern="[0-9]+"><input type="text" name="Qualified business income deduction" size="2"required pattern="[0-9]{2}"><br>
+            filing separately,$12,000 <span style="padding-left:6px;"></span><b>10</b> &nbsp;&nbsp;Taxable income. Subtract lines 8 and 9 from line 7. If zero or less, enter -0- .&emsp; . &emsp; . &emsp; . &emsp; .&emsp;.&emsp; . &emsp; . &emsp; . &emsp; . &emsp; . &emsp; . &emsp; . &emsp; . &emsp; .&emsp;<b>10 </b>&nbsp; <input type="text" name="Taxable income" size="13"required pattern="[0-9]+"><input type="text" name="Taxable income" size="2"required pattern="[0-9]{2}"><br>
+
+            &bull; Married filing jointly <span style="padding-left:19px;"></span><b>11</b> &nbsp;&nbsp;<b>a</b> Tax (see inst.) &nbsp;<input type="text" name="Tax" size="4" required pattern="[0-9]+"> (check if any from: &nbsp;<b>1 </b> <input type="checkbox" name="Form(s) 8814">Form(s) 8814 &emsp; <b>2 </b> <input type="checkbox" name="Form 4972">Form 4972 &emsp; <b>3 </b> <input type="checkbox"> <input type="text" name="Tax" size="4">)&emsp; . &emsp; . &emsp; . &emsp; . &emsp; . &emsp; . &emsp; . &emsp; . &emsp; .&emsp; . &emsp; . &emsp; . &emsp; . &emsp; .&emsp;<br>
+            or Qualifying widow(er), <span style="padding-left:3px;"></span> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>b Add</b> any amount from Schedule 2 and check here &emsp;  . &emsp; . &emsp;. &emsp; . &emsp; .&emsp;&emsp; . &emsp; . &emsp; . &emsp; . &emsp; . &emsp; .&emsp; . &emsp; . &emsp; . &emsp; . &emsp;.&emsp;.&emsp;<b> ▶</b> <input type="checkbox"> &emsp; <b>11 </b>&nbsp; <input type="text" name="Tax" size="13"required pattern="[0-9]+"><input type="text" name="Tax" size="2"required pattern="[0-9]{2}"><br>
+            $24,000 <span style="padding-left:112px;"></span><b>12</b> &nbsp;&nbsp;<b>a</b> Child tax credit/credit for other dependents <input type="text" name="Total income" size="12"required pattern="[0-9]+"> <b>b Add</b> any amount from Schedule 3 and check here &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;<b> ▶</b> <input type="checkbox">&nbsp;&nbsp; &nbsp  <b> 12 </b> &nbsp; <input type="text" name="gross income" size="13"required pattern="[0-9]+"><input type="text" name="Wages, salaries, tips, etc. Attach Form(s) W-2" size="2"required pattern="[0-9]{2}"><br>
+    
+            &bull; Head of household, <span style="padding-left:29px;"></span><b>13</b> &nbsp;&nbsp;Subtract line 12 from line 11. If zero or less, enter -0-&emsp; . &emsp; . &emsp; . &emsp; . &emsp; . &emsp;.&emsp; . &emsp; . &emsp; . &emsp; . &emsp; . &emsp; . &emsp; . &emsp; . &emsp; . &emsp; . &emsp; . &emsp; . &emsp; .&emsp;<b>13 </b>&nbsp; <input type="text" name="gross income" size="13"required pattern="[0-9]+"><input type="text" name="Wages, salaries, tips, etc. Attach Form(s) W-2" size="2"required pattern="[0-9]{2}"><br>
+            $18,000 <span style="padding-left:111px;"></span><b>14</b> &nbsp;&nbsp;Other taxes. Attach Schedule 4 &emsp;&nbsp; . &emsp; . &emsp; . &emsp; . &emsp; . &emsp; . &emsp; . &emsp; . &nbsp;&emsp; .&emsp; . &emsp;.&emsp; . &emsp; . &emsp;. &emsp; . &emsp; . &emsp; . &emsp; . &emsp; . &emsp; . &emsp; . &emsp; . &emsp; . &emsp; .&emsp;<b>14 </b>&nbsp; <input type="text" name="gross income" size="13"required pattern="[0-9]+"><input type="text" name="Wages, salaries, tips, etc. Attach Form(s) W-2" size="2"required pattern="[0-9]{2}"><br>
+
+            &bull; If you checked any <span style="padding-left:30px;"></span><b>15</b> &nbsp;&nbsp;Total tax. Add lines 13 and 14&emsp; &emsp; .&emsp; . &emsp; . &emsp; . &emsp; . &emsp; . &emsp; . &emsp; . &emsp;. &emsp; . &emsp; .&emsp; . &emsp; . &emsp;. &emsp; . &emsp; . &emsp; . &emsp; . &emsp; . &emsp; . &emsp; . &emsp; . &emsp; . &emsp; .&emsp;<b>15</b>&nbsp; <input type="text" name="gross income" size="13"required pattern="[0-9]+"><input type="text" name="Wages, salaries, tips, etc. Attach Form(s) W-2" size="2"required pattern="[0-9]{2}"><br>
+            box under Standard<span style="padding-left:40px;"></span><b>16</b> &nbsp;&nbsp;Federal income tax withheld from Forms W-2 and 1099. &emsp;. &emsp; . &emsp; . &emsp; . &emsp; . &emsp; . &emsp; . &nbsp;&emsp; . &emsp; . &emsp; . &emsp; . &emsp; . &emsp; . &emsp; . &emsp; . &emsp; . &emsp; . &emsp; .&emsp;<b>16</b>&nbsp; <input type="text" name="gross income" size="13"required pattern="[0-9]+"><input type="text" name="Wages, salaries, tips, etc. Attach Form(s) W-2" size="2"required pattern="[0-9]{2}"><br>
+            deduction, see <span style="padding-left:69px;"></span><b>17</b> &nbsp;&nbsp;Refundable credits: <b>a</b> EIC (see inst.)&emsp;<input type="text" name="Refundable credits" size="9"required pattern="[0-9]+"> &emsp;<b>b</b> Sch. 8812 &emsp;<input type="text" name="Refundable credits" size="9"required pattern="[0-9]+"> &emsp;<b>c</b> Form 8863&emsp;<input type="text" name="Refundable credits" size="9"required pattern="[0-9]+"> &emsp; . &emsp; . &emsp; . &nbsp;&emsp; . &emsp; . &emsp; . &emsp; . &emsp; . &emsp; . &emsp; . &emsp; <br>
+            instructions.<span style="padding-left:112px;"></span><b>Add</b> any amount from Schedule 5 &nbsp;&nbsp;&nbsp;&nbsp;<input type="text" name="Refundable credits:" size="9"required pattern="[0-9]+"> &emsp; &emsp; &emsp; . &emsp; . &emsp; . &emsp; . &emsp; . &emsp; . &emsp; . &emsp; . &emsp; . &emsp; . &emsp; . &emsp; . &emsp; . &emsp; . &emsp; . &emsp; . &emsp; . &nbsp;&nbsp;&emsp; <b>17</b>&nbsp; <input type="text" name="Refundable credits" size="13"required pattern="[0-9]+"><input type="text" name="Wages, salaries, tips, etc. Attach Form(s) W-2" size="2"required pattern="[0-9]{2}"><br>
+
+            <span style="padding-left:163px;"></span><b>18</b> &nbsp; Add lines 16 and 17. These are your total payments &emsp;  . &nbsp;&emsp;. &emsp; . &emsp; . &emsp; . &emsp; . &emsp; . &emsp; . &emsp; &nbsp;&nbsp; . &emsp; . &emsp; . &emsp; . &emsp; . &emsp; . &emsp; . &emsp; . &emsp; .&emsp;. &emsp;. &emsp;<b>18 </b>&nbsp;<input type="text" name="Wages, salaries, tips, etc. Attach Form(s) W-2" size="13"required pattern="[0-9]+"><input type="text" name="Wages, salaries, tips, etc. Attach Form(s) W-2" size="2"required pattern="[0-9]{2}">
+            <hr>
+            <span style="font-size:18pt"></span><b>Refund</b><span style="padding-left:111px;"></span><b>19</b> &nbsp; If line 18 is more than line 15, subtract line 15 from line 18. This is the amount you <b>overpaid</b> . &emsp; . &emsp; . &emsp; . &emsp; . &emsp; . &emsp; . &emsp; . &emsp; . &emsp; . &emsp; <b>19</b> &nbsp; <input type="text" name="Wages, salaries, tips, etc. Attach Form(s) W-2" size="13"required pattern="[0-9]+"><input type="text" name="Wages, salaries, tips, etc. Attach Form(s) W-2" size="2"required pattern="[0-9]{2}"><br>
+            <span style="padding-left:161px;"></span><b>20a</b>&nbsp;Amount of line 19 you want refunded to you. If Form 8888 is attached, check here &emsp;   . &emsp; . &emsp; . &emsp; . &emsp;  . &emsp; . &emsp; . &emsp; .&emsp; .&emsp;. &emsp; &nbsp;<b> ▶</b> <input type="checkbox">&emsp;<b>20a</b>&nbsp; <input type="text" name="Tax" size="13"required pattern="[0-9]+"><input type="text" name="Tax" size="2"required pattern="[0-9]{2}"><br>
+            <span style="font-size:8pt"></span>Direct deposit?<span style="padding-left:64px;"></span>▶<b>b</b>&nbsp;Routing number &emsp; <input style="width:1rem;" type="text" name="Routing number" minlenght="1" maxlength="1" required pattern="[0-9]{1}"><input style="width:1rem;" type="text" name="Routing number" minlenght="1" maxlength="1" required pattern="[0-9]{1}"><input style="width:1rem;" type="text" name="Routing number" minlenght="1" maxlength="1" required pattern="[0-9]{1}"><input style="width:1rem;" type="text" name="Routing number" minlenght="1" maxlength="1" required pattern="[0-9]{1}"><input style="width:1rem;" type="text" name="Routing number" minlenght="1" maxlength="1" required pattern="[0-9]{1}"><input style="width:1rem;" type="text" name="Routing number" minlenght="1" maxlength="1" required pattern="[0-9]{1}"><input style="width:1rem;" type="text" name="Routing number" minlenght="1" maxlength="1" required pattern="[0-9]{1}"><input style="width:1rem;" type="text" name="Routing number" minlenght="1" maxlength="1" required pattern="[0-9]{1}"><input style="width:1rem;" type="text" name="Routing number" minlenght="1" maxlength="1" required pattern="[0-9]{1}"> &emsp;▶ <b>c</b> Type: &emsp; <input type="checkbox" name="Type">Checking &emsp;<input type="checkbox" name="Type">Savings &emsp; &emsp;<br> <!--sty;e width:1rem is a root em which is used to create a user entry in a box which can take only one digit, because of the pattern required element specified in the input tag -->
+            <span style="font-size:8pt"></span>See instructions.<span style="padding-left:54px;"></span>▶<b>d</b>&nbsp;Account number &emsp; <input style="width:1rem;" type="text" name="Account number" minlenght="1" maxlength="1" required pattern="[0-9]{1}"><input style="width:1rem;" type="text" name="Account number" minlenght="1" maxlength="1" required pattern="[0-9]{1}"><input style="width:1rem;" type="text" name="Account number" minlenght="1" maxlength="1" required pattern="[0-9]{1}"><input style="width:1rem;" type="text" name="Account number" minlenght="1" maxlength="1" required pattern="[0-9]{1}"><input style="width:1rem;" type="text" name="Account number" minlenght="1" maxlength="1" required pattern="[0-9]{1}"><input style="width:1rem;" type="text" name="Account number" minlenght="1" maxlength="1" required pattern="[0-9]{1}"><input style="width:1rem;" type="text" name="Account number" minlenght="1" maxlength="1" required pattern="[0-9]{1}"><input style="width:1rem;" type="text" name="Account number" minlenght="1" maxlength="1" required pattern="[0-9]{1}"><input style="width:1rem;" type="text" name="Account number" minlenght="1" maxlength="1" required pattern="[0-9]{1}"><input style="width:1rem;" type="text" name="Account number" minlenght="1" maxlength="1" required pattern="[0-9]{1}"><input style="width:1rem;" type="text" name="Account number" minlenght="1" maxlength="1" required pattern="[0-9]{1}"><input style="width:1rem;" type="text" name="Account number" minlenght="1" maxlength="1" required pattern="[0-9]{1}"><input style="width:1rem;" type="text" name="Account number" minlenght="1" maxlength="1" required pattern="[0-9]{1}"><input style="width:1rem;" type="text" name="Account number" minlenght="1" maxlength="1" required pattern="[0-9]{1}"><input style="width:1rem;" type="text" name="Account number" minlenght="1" maxlength="1" required pattern="[0-9]{1}"><input style="width:1rem;" type="text" name="Account number" minlenght="1" maxlength="1" required pattern="[0-9]{1}"><input style="width:1rem;" type="text" name="Account number" minlenght="1" maxlength="1" required pattern="[0-9]{1}"><br>
+            <span style="padding-left:160px;"></span><b>21 </b>&nbsp;Amount of line 19 you want applied to your 2019 estimated tax &emsp; . &emsp; . &emsp; . &emsp; . &emsp; . &emsp; . &emsp;&nbsp; . &emsp; . &emsp; <b> ▶</b>&emsp;<b>20a</b>&nbsp; <input type="text" name="Tax" size="13"required pattern="[0-9]+"><input type="text" name="Tax" size="2"required pattern="[0-9]{2}">
+            <hr>
+            <span style="font-size:75%"></span>Amount You Owe<span style="padding-left:43px;"></span><b>22</b>&nbsp;&nbsp;<b>Amount You Owe.</b> Subtract line 18 from line 15. For details on how to pay, see instructions . &emsp; . &emsp;  . &emsp; . &emsp; . &emsp; . &emsp; . &emsp; &nbsp; . &emsp; . &emsp;<b>▶</b> &emsp; <b>22</b>&nbsp; <input type="text" name="Tax" size="13"required pattern="[0-9]+"><input type="text" name="Tax" size="2"required pattern="[0-9]{2}"><br>
+            <span style="padding-left:160px;"></span><b>23 </b>&nbsp;Estimated tax penalty (see instructions) . &emsp; . &emsp; . &emsp; . &emsp; . &emsp; . &emsp; . &emsp; . &emsp; . &emsp; . &emsp; .&nbsp; . &emsp; . &emsp; . &emsp; . &emsp; <b> ▶</b> &nbsp; <b>23 </b> &nbsp;&nbsp; <input type="text" name="Tax" size="13"required pattern="[0-9]+"><input type="text" name="Tax" size="2"required pattern="[0-9]{2}">
+            <hr>
+            Go to <i><a href="www.irs.gov/Form1040">www.irs.gov/Form1040</a></i> for instructions and the latest information.<span style="padding-left:700px;"></span>Form <b>1040</b> (2018)<br><br>
+            
+            <center><button type="submit" form="nameform" id="nameform" value="Submit">Submit</button></center> <!--Adding a button called Submit using <button> tag and aligning it to the center using <center> tag-->
+        </form>
+        
+        <!--    1. href attribute specifies the link's destination:
+                2. <i> is used to make the text italic.
+            -->
+    </body> <!--closing the body tag-->
+</html> <!--closing the html tag-->

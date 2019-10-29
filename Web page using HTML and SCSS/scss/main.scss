@@ -1,0 +1,676 @@
+@import "variables";
+@import "nav";
+@import "home";
+
+@mixin measurements($lenght, $breadth) {
+    height: $lenght;
+    width: $breadth;
+}
+
+@mixin dimensions($top,$left) {
+    top: $top;
+    left: $left;
+}
+
+@mixin pics($images,$size){
+    background-image:$images;
+    background-repeat:no-repeat;
+    background-size:$size;
+}
+
+@mixin grid_column_row ($column,$row) {
+    grid-column: $column;
+    grid-row: $row;
+}
+
+.newsprotal {
+    @include pics(url('images/header1.png'),100%);
+    @include measurements(39px,175px);
+    display: inline-block;
+}/*inserting newsprotal image*/
+
+.facebook{
+    color:blue;
+    font-family: 'Franklin Gothic small', Arial, sans-serif;
+    padding-left: 215px;
+    padding-right: 10px;
+    font-size: 75%;
+    text-decoration: none;
+  }
+.youtube{
+    @extend .facebook;
+    color: red;
+    padding: 0px 10px;
+  }
+.instagram{
+    @extend .youtube;
+    color:rgb(188, 96, 201);
+  }
+
+body {
+    background-color: $body-color;
+}
+.content {
+    @include measurements(2450px,898px );
+    margin: 58px 492px 10px 494px;
+    background-color: $content-color;
+    max-height: 2500px;      
+} /*defines the height and the width of the content*/
+
+.wrapper {
+    max-width: 900px;
+    height: 72px;
+  } /*grid for the header of the page*/
+  
+  .wrapper > div {
+    border: $border-color;
+    border-top: 0px;
+    background-color:white;
+    padding: 1em;
+    color: black;
+  }
+  
+  .wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(3, 1fr);
+    grid-gap: 0px;
+    padding-top: 0px;
+    padding-left: 10px;
+    padding-right: 10px;       
+  }
+  
+  div.one {
+    @include measurements(39px,198px);
+    border-left: 0px;    
+    grid-column: 1;
+    grid-row: 1 / 3;
+    padding: 25px 17px 7px 78px;  
+  } /*Newsprotal grid part*/
+  
+  div.two {
+    @include measurements(3px,552px);
+    @include grid_column_row(2/3,1/2);
+    border-left: 0px;
+    border-right: 0px;   
+  } /*FACEBOOK, YOUTUBE INSTAGRAM grid part*/
+
+  div.three {
+    @include grid_column_row(2/3,2/3);
+    height: 3px;
+    border-left: 0px; 
+    border-right: 0px;  
+    padding-top: 0px;
+    padding-bottom: 32px;
+    font-family:'Franklin Gothic small', 'Arial Narrow', Arial, sans-serif;
+    font-size: 90%;
+} /*navigation bar grid part*/
+
+.searchbar {
+    @include pics($searchicon,28%);
+    background-position: 36px;
+} /*Seach icon in nav bar*/
+
+.wrapper1 {
+    top: 80px;   
+    max-width: 470px;
+    margin: 24px 88px;
+  }/*Big image (1) grid part*/
+
+  .wrapper1 > div {
+    border: 1px solid red;
+    border: 0px;
+    background-color: rgba(233,171,88,.5);
+    padding: 1em;
+    color: black;
+  }
+
+  .wrapper1 {
+    display: grid;
+    grid-template-columns: 1fr; 
+    grid-template-rows: 1fr;
+    grid-gap: 10px;
+    padding: 0px;       
+  }
+  
+  div.w1 { 
+    @include measurements(231px,438px);
+    @include pics($bigimage,100%);
+    @include grid_column_row(1,1);
+  } /*inserting the big image*/
+
+  div.redtext {
+    @include measurements(59px,449px);
+    @include grid_column_row(1,1 );
+    position: sticky;
+    top: 338px;
+    z-index: 0;
+    background-color: rgba(196, 25, 25, 0.815);
+    padding: 10px;
+  }
+
+  .redcontent1 {
+      font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+      font-size: 85%;
+      color: white; 
+  } /* inserting bold text content for big image*/
+
+  .redcontent2 {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 72%;
+    color: rgba(255, 255, 255, 0.874);
+    padding-top: 2px; 
+} /* inserting normal text content for big image*/
+
+.wrapper2 {
+    top: 320px;   
+    max-width: 470px;
+    margin: -14px 87px;
+    z-index: 0;
+  } /*creating grid for next small 4 images under the big image*/
+
+  .wrapper2 > div {
+    border: 1px solid red;
+    border: 0px;
+    background-color: rgba(233,171,88,.5);
+    padding: 1em;
+    color: black;
+  }
+
+  .wrapper2 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-gap: 10px;
+    padding: 0px;    
+  }
+  
+  div.ww1 { 
+    @include measurements(175px,198px);
+    @include grid_column_row(1,1 );
+    @include pics($topleft,100%);    
+  } /*grid for topleft img*/
+
+  div.ww2 {
+    @include measurements(175px,198px);
+    @include grid_column_row(2 / 3,1 / 2 );
+    @include pics($topright,100%);    
+  } /*grid for topright img*/
+
+  div.ww3 {
+    @include measurements(175px,198px);
+    @include grid_column_row(1 / 2,2 / 3 );
+    @include pics($bottomleft,100%); 
+  } /*grid for bottomleft img*/
+
+  div.ww4 {
+    @include measurements(175px,198px);
+    @include grid_column_row(2 / 3,2 / 3 );
+    @include pics($bottomright,100%); 
+} /*grid for bottomright img*/
+
+.wrapper3 {
+    top: 320px;   
+    max-width: 470px;
+    margin: -299px 87px;
+    z-index: 1;
+  } /*creating grid for textbox's for the small 4 images under the big image*/
+
+  .wrapper3 > div {
+    border: 1px solid red;
+    border: 0px;
+    background-color: white;
+    padding: 1em;
+    color: black;
+  }
+
+  .wrapper3 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-gap: 135px 10px;
+    padding: 0px;    
+  }
+  
+.custom-padding{
+    padding: 5px;
+    padding-left: 0px;
+    /*background-color: grey;*/
+    @include measurements(72px,225px);
+}
+
+  div.text1 { 
+    @include grid_column_row(1/2,1/2);
+    @extend .custom-padding;
+  } /*text grid for topleft img*/
+
+  div.text2 {
+    @include grid_column_row(2/3,1/2);
+    @extend .custom-padding;
+  } /*text grid for topright img*/
+  div.text3 {
+    @include grid_column_row(1/2,2/3);
+    @extend .custom-padding;
+  } /*text grid for bottomleft img*/
+  div.text4 {
+    @include grid_column_row(2/3,2/3);
+    @extend .custom-padding;
+  } /*text grid for bottomright img*/
+
+  .text1_content {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 69%;
+  } /*styling the text grid content with bold*/
+
+  .text1_content1 {
+    @extend .text1_content;
+    padding-top: 5px;
+    color: rgb(32, 31, 31);
+  } /*styling the text grid content with normal*/
+
+  .wrapper4 {
+    @include measurements(120px,231px);
+    @include dimensions(146px,1059px);
+    @include grid_column_row(1,1);
+
+    margin: 10px 10px;
+    padding: 0px;
+    position: absolute;
+
+    z-index: 2;
+    background-color:white;
+    color: black;
+    
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+  }
+
+.tableboarder {
+    font-size: 50%;
+    width: 232px;    
+} /*setting the width and the font size for the table*/
+
+table {
+    border: $border-color;
+    border-collapse: collapse;
+    font-size: 60%;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: 200;
+    color: darkgray;
+    padding: 1px;
+}
+
+.th1 {
+    border-bottom: $border-color;
+    padding-top: 6px;
+    padding-bottom: 6px;
+    padding-left: 4px;
+    width: 97px;
+} /*first cell of the first row in the table*/
+
+.th2 {
+    border-bottom: $border-color;
+    padding: 8px 0px;
+    width: 68px;
+} /*2nd cell of the first row in the table*/
+
+.th3 {
+    border-bottom: $border-color;
+    padding-top: 6px;
+    padding-bottom: 6px;
+    padding-right: 4px;
+    width: 50px;
+    text-align: end;
+} /*3rd cell of the first row in the table*/
+
+td {
+    border-bottom: $border-color;
+    padding: 3px 4px;
+} /* rest of the cells configuration*/
+
+.red {
+    color: red;
+    text-align: end;
+}
+
+.green {
+    color: green;
+    text-align: end;
+}
+
+.wrapper5 {
+    @include measurements(278px,229px);
+    @include dimensions(276px,1059px);
+
+    margin: 10px 10px;
+    padding: 0px;
+    position: absolute;
+    border: $border-color;
+    z-index: 2;
+  } /*grid for INTERNAIONAL NEWS PART*/
+
+  .wrapper5 > div {
+    border: 1px;
+    background-color: white;
+    padding: 0px;
+    padding-left: 5px;
+    margin: 10px;
+    color: black;
+  }
+
+  .wrapper5 {
+    display: grid;
+    grid-auto-rows: 11px;
+    grid-auto-columns: 1px;
+    padding: 0px;    
+  }
+  
+  div.ss1 { 
+    grid-column: 1 / 230;
+    grid-row: 1 / 5;
+    border-bottom: $border-color;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: gray;
+    padding-left: 0px;
+    padding-top: 0px; 
+    margin-bottom: 12px;
+  }
+  div.ss2 {
+    @include pics($righttop_grid_image1,100%);
+    grid-column: 1 / 107;
+    grid-row: 4 / 11;
+  }
+  div.ss3 {  
+    grid-column: 91 / 230;
+    grid-row: 4 / 11;
+  }
+  div.ss4 {
+    @include pics($righttop_grid_image2,100%);
+    grid-column: 1 / 107;
+    grid-row: 10 / 17;
+  } 
+  div.ss5 {
+    grid-column: 91 / 230;
+    grid-row: 10 / 17;
+  }
+  div.ss6 {
+    @include pics($righttop_grid_image3,100%);
+    grid-column: 1 / 107;
+    grid-row: 16 / 23;
+  }
+  div.ss7 {
+    grid-column: 91 / 230;
+    grid-row: 16 / 23;
+  }
+  div.ss8 {
+    grid-column: 1 / 230;
+    grid-row: 22 / 26;
+    @extend .read-more-news ;
+  }
+    /*using for loop for defining font size and color*/
+  @for $i from 6 through 10 {
+    .font-#{$i} {font-size: 10% * $i}
+}
+
+.font-7 {
+    color: gray;
+}
+.font-8 {
+    color:white;
+}
+.font-9 {
+    color: rgb(32, 31, 31);
+}
+.font-10 {
+    color: rgb(32, 31, 31);
+}
+.read-more-news, .font-7{
+    border-top: $border-color;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    padding-left: 0px;
+    padding-top: 10px;
+    margin-top: 14px;
+    text-align: center;
+}
+.jan {
+    font-family: 'Franklin Gothic small', 'Arial Narrow', sans-serif;
+    font-size: 65%;
+    color: $jan15th;
+}
+
+.sideboxtext {
+    font-family: 'Franklin Gothic small', 'Arial Narrow', sans-serif;
+    font-size: 60%;
+}
+
+.wrapper6 {
+
+    @include dimensions(561px,1059px);
+    @include measurements(278px,229px);
+
+    margin: 10px 10px;
+    padding: 0px;
+    position: absolute;
+    border: $border-color;
+    z-index: 3;
+  } /*grid for SPORTS NEWS PART*/
+
+  .wrapper6 > div {
+    border: 1px;
+    background-color: white;
+    padding: 0px;
+    padding-left: 5px;
+    margin: 10px;
+    color: black;
+  }
+
+  .wrapper6 {
+    display: grid;
+    /*grid-template-columns: 1fr 1fr;*/
+    grid-auto-rows: 11px;
+    grid-auto-columns: 1px;
+    /*grid-template-rows: repeat(5, 1fr);*/
+    padding: 0px;    
+  }
+  
+  div.ssb1 { 
+    grid-column: 1 / 230;
+    grid-row: 1 / 5;
+    border-bottom: $border-color;
+
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: gray;
+    padding-left: 0px;
+    padding-top: 0px; 
+    margin-bottom: 12px;
+  }
+  div.ssb2 {
+    @include pics($rightbottom_grid_image1,100%);
+    grid-column: 1 / 107;
+    grid-row: 4 / 11;
+  }
+  div.ssb3 {
+    grid-column: 91 / 230;
+    grid-row: 4 / 11;
+  }
+  div.ssb4 {
+    @include pics($rightbottom_grid_image2,100%);
+    grid-column: 1 / 107;
+    grid-row: 10 / 17;
+  } 
+  div.ssb5 {
+    grid-column: 91 / 230;
+    grid-row: 10 / 17;
+  }
+  div.ssb6 {
+    @include pics($rightbottom_grid_image3,100%);
+    grid-column: 1 / 107;
+    grid-row: 16 / 23;
+  }
+  div.ssb7 {
+    grid-column: 91 / 230;
+    grid-row: 16 / 23;
+  }
+  div.ssb8 {
+    grid-column: 1 / 230;
+    grid-row: 22 / 26;
+    
+    border-top: $border-color;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 70%;
+    color: gray;
+    padding-left: 0px;
+    padding-top: 10px;
+    margin-top: 14px;
+    text-align: center
+  }
+
+.wrapper7 {
+    @include measurements(240px,712px);
+    @include dimensions(870px,588px);
+    margin: 0px 0px;
+    position: absolute;
+    border: $border-color;
+    border-left: none;
+    border-right: none;
+    z-index: 2;
+  } /*used for bottom grid*/
+
+  .wrapper7 > div {
+    border: 1px;
+    background-color: white;
+    padding: 0px;
+    margin: 0px 0px;
+    color: black;
+  }
+
+  .wrapper7 {
+    display: grid;
+    grid-auto-rows: 1px;
+    grid-auto-columns: 1px;
+    padding: 20px 0px;    
+  }  
+
+  div.b1 { 
+    @include pics($bottom-pic1,100% );
+    grid-column: 1 / 230;
+    grid-row: 1 / 107;
+  }
+  div.b2 {
+    @include pics($bottom-pic2,100% );
+    grid-column: 240 / 470;
+    grid-row: 1 / 107;
+  }
+  div.b3 {
+    @include pics($bottom-pic3,100% );
+    grid-column: 480 / 712;
+    grid-row: 1 / 107;
+  }
+
+  .custom-texting {
+    padding-top: 5px;
+    font-family: 'Franklin Gothic small', 'Arial Narrow';
+    font-size: 70%;
+    color: rgb(32, 31, 31);
+  }
+  div.b4 {
+    grid-column: 1 / 230;
+    grid-row: 117 / 251;
+    @extend .custom-texting ;
+  } 
+  div.b5 {
+    grid-column: 240 / 470;
+    grid-row: 117 / 251;
+    @extend .custom-texting ;
+  }
+  div.b6 {
+    grid-column: 480 / 712;
+    grid-row: 117 / 251;
+    @extend .custom-texting ;
+  }
+
+  .wrapper8 {
+    @include measurements(35px,900px);
+    @include dimensions(1151px,501px);
+    margin: 0px 0px;
+    position: absolute;
+    border-bottom: 20px solid rgb(54, 53, 53);
+    border-left: none;
+    border-right: none;
+    z-index: 2;
+  } /*used for Ad grid*/
+ 
+  .wrapper8 > div {
+    border: 1px;
+    background-color: lightblue;
+    padding: 0px;
+    margin: 0px 0px;
+    color: black;
+  }
+
+  .wrapper8 {
+    display: grid;
+    grid-auto-rows: 1px;
+    grid-auto-columns: 1px;
+    padding: 30px 0px;    
+  }  
+
+  div.ad1 {
+    @include pics($ad1,100%);
+    grid-column: 87 / 511;
+    grid-row: 1 / 54;
+  }
+  div.ad2 {
+    @include pics($ad2,100%);
+    grid-column: 643 / 800;
+    grid-row: 1 / 54;
+  }
+
+  .wrapper9 {
+    @include measurements(200px,898px);
+    @include dimensions(1310px,502px);
+
+    margin: 0px 0px;
+    position: absolute;
+    border-left: none;
+    border-right: none;
+    z-index: 3;
+  } /*used for footer and last image*/
+
+  .wrapper9 > div {
+    border: 1px;
+    padding: 0px;
+    margin: 0px 0px;
+    color: black;
+  }
+
+  .wrapper9 {
+    display: grid;
+    grid-auto-rows: 1px;
+    grid-auto-columns: 1px;
+    padding: 0px 0px;    
+  }  
+
+  div.footer { 
+    grid-column: 1 / 899;
+    grid-row: 1 / 57;
+    background-color: black;
+    text-align: center;
+    text-decoration: none;
+    padding: 17px 20px;
+  }
+
+  div.footer_content > a {
+    color: white;
+    text-decoration: none;
+    font-size: 80%;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow';
+  }
+  div.footer_img {
+    @include pics($footer,137%);
+    grid-column: 1 / 899;
+    grid-row: 57 / 169;
+    background-position: top;
+    
+  }
